@@ -13,8 +13,8 @@ I am a research engineer at ANSYS working on the Fluent GPU solver development. 
 
 | Degree | Program | School | Year | Thesis | Slides
 |---|---|---|---|---|---|
-| Ph.D | Aerospace Engineering | Georgia Institute of Technology | 2015 -- 2020 | [Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties](http://hdl.handle.net/1853/63658) | [Slides](../files/publications/komahan-boopathy-phd-defense.pdf)
-| M.S  | Aerospace Engineering | University of Dayton | 2012 -- 2014 | [Uncertainty Quantification and Optimization Under Uncertainty Using Surrogate Models](http://rave.ohiolink.edu/etdc/view?acc_num=dayton1398302731) | [Slides](../files/publications/komahan-boopathy-masters-defense.pdf)
+| Ph.D | Aerospace Engineering | Georgia Institute of Technology | 2015 -- 2020 | [Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties](http://hdl.handle.net/1853/63658) | <a href="../files/publications/komahan-boopathy-phd-defense.pdf"><img src="../files/phd-defense-slides-cover.png" alt="Slides Cover" style="width:100px;"></a>  |
+| M.S  | Aerospace Engineering | University of Dayton | 2012 -- 2014 | [Uncertainty Quantification and Optimization Under Uncertainty Using Surrogate Models](http://rave.ohiolink.edu/etdc/view?acc_num=dayton1398302731) |  <a href="../files/publications/komahan-boopathy-masters-defense.pdf"><img src="../files/masters-defense-slides-cover.png" alt="Slides Cover" style="width:100px;"></a> |
 | B.Tech | Aerospace Engineering | SRM University | 2008 -- 2012 | -- | -- |
 
 ## Research Focus
