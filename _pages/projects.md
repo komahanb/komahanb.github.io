@@ -1,8 +1,8 @@
 ---
 title: "Projects"
-permalink: /projects
+permalink: /projects/
 author_profile: true
-redirect_from: 
+redirect_from:
   - /projects
   - /projects.html
 ---

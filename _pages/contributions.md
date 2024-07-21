@@ -2,6 +2,9 @@
 title: "Contributions"
 permalink: /contributions/
 author_profile: true
+redirect_from:
+  - /contributions
+  - /contributions.html
 ---
 
 ## Computational Methods for Physics Informed Aerospace Design Optimization Under Uncertainties 
