@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a research engineer at ANSYS working on the Fluent GPU solver development. My passion lies in crafting computational frameworks that analyze the static and dynamic equilibrium of aerospace systems and environmental surroundings.
+I am a research engineer at ANSYS. I work on the *Fluent* GPU solver development. My passion lies in crafting computational frameworks that analyze the static and dynamic equilibrium of aerospace systems and environmental surroundings.
 
 [Curriculum Vitae (PDF)](../files/KomahanBoopathyCV.pdf)
 
@@ -46,4 +46,18 @@ These simulations backed by the mathematical fabric of differential and algebrai
 - the U.S. Department of Energy owns four of the top ten fastest supercomputers in the world [[1]](https://www.energy.gov/science/high-performance-computing), capable of high-volume number crunching of upto 1 quintillion operations per second
 - the NASA is pursuing its 2030 vision for computatational methods aiming to improve the state-of-the-art of accuracy, speed, scalability and design optimization capabilities, in additional to the basic computational physics [[Mavriplis 2014]](../files/publications/nasa-cfd-2030.pdf).
 
-The core methods forming the computational mathematics layer are fairly generic to other fields of engineering and computational sciences (e.g. computational biology, computational finance); thanks to [R. Descartes' (1596–1650)](https://plato.stanford.edu/entries/descartes/) admirable philosophical insights into the abstract nature of mathematics. 
+The core methods forming the computational mathematics layer are fairly generic to other fields of engineering and computational sciences (e.g. computational biology, computational finance); thanks to [R. Descartes' (1596–1650)](https://plato.stanford.edu/entries/descartes/) admirable philosophical insights into the abstract nature of mathematics.
+
+Computational aerosciences is a special field of study under Aerospace Engineering which spearheads the aerospace sector into next generation by fostering research and development of modern civilian and military aerospace technologies at an accelerated pace. The field is of direct interest to the U.S. (as well as foreign) research agencies such as the [Airforce Research Laboratory](https://afresearchlab.com/technology/aerospace/), [NASA](https://sourcelink.cadence.com/CFD-2030-Fact-Sheet-2022-final.pdf), [Oak Ridge National Laboratory](https://www.ornl.gov/division/csed), [Sandia National Laboratory](https://www.sandia.gov/ccr/), [Argonne National Laboratory](https://www.anl.gov/cps). The field is a synthesis of topics from applied mathematics and physics :
+
+```
+Finite element method, adjoint sensitivity analysis, uncertainty quantification, aerodynamic shape optimization, structural sizing optimization, optimization under mixed uncertainties, rotorcraft design optimization, computational fluid dynamics, flexible multibody dynamics, stochastic finite element method, statistics, surrogate models, higher-order information, variable fidelity modeling, software architecture for finite elements and stochastic finite elements
+```
+
+### More Reading
+
+- [NASA - CFD Vision 2030 Study: A Path to Revolutionary Computational Aerosciences](https://sourcelink.cadence.com/study.html) [(Journal Publication)](https://arc.aiaa.org/doi/10.2514/6.2021-2726) [(Video Presentation)](https://video.aiaa.org/Title/5dec9d54-987f-410e-b95d-630b8cf178ec)
+
+- [Massachusetts Institute of Technology: Aerospace (x) Computational Engineering](https://aeroastro.mit.edu/research-areas/computational-science-engineering/))
+
+- [Stanford University Aeronautics and Astronautics: Multidisciplinary Computational Aerosciences](https://aa.stanford.edu/research-impact/multidisciplinary-computational-aerosciences)

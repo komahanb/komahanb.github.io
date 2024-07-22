@@ -9,15 +9,7 @@ redirect_from:
 
 ## Computational Methods for Physics Informed Aerospace Design Optimization Under Uncertainties 
 
-![](../files/mcas-focus-areas-2.JPG)
-
-Computational aerosciences is a special field of study under Aerospace Engineering which spearheads the aerospace sector into next generation by fostering research and development of modern civilian and military aerospace technologies at an accelerated pace. The field is of direct interest to the U.S. (as well as foreign) research agencies such as the [Airforce Research Laboratory](https://afresearchlab.com/technology/aerospace/), [NASA](https://sourcelink.cadence.com/CFD-2030-Fact-Sheet-2022-final.pdf), [Oak Ridge National Laboratory](https://www.ornl.gov/division/csed), [Sandia National Laboratory](https://www.sandia.gov/ccr/), [Argonne National Laboratory](https://www.anl.gov/cps). The field is a synthesis of topics from applied mathematics and physics :
-
-```
-Finite element method, adjoint sensitivity analysis, uncertainty quantification, aerodynamic shape optimization, structural sizing optimization, optimization under mixed uncertainties, rotorcraft design optimization, computational fluid dynamics, flexible multibody dynamics, stochastic finite element method, statistics, surrogate models, higher-order information, variable fidelity modeling, software architecture for finite elements and stochastic finite elements
-```
-
----
+![](../files/mcas-focus-areas.JPG)
 
 ## Highlighted Contributions
 
@@ -45,11 +37,3 @@ Finite element method, adjoint sensitivity analysis, uncertainty quantification,
 
 - Application of surrogate-based OUU framework for robust structural and aerodynamic optimizations
 
-
-**References:  **
-
-- [NASA - CFD Vision 2030 Study: A Path to Revolutionary Computational Aerosciences](https://sourcelink.cadence.com/study.html) [(Journal Publication)](https://arc.aiaa.org/doi/10.2514/6.2021-2726) [(Video Presentation)](https://video.aiaa.org/Title/5dec9d54-987f-410e-b95d-630b8cf178ec)
-
-- [Massachusetts Institute of Technology: Aerospace (x) Computational Engineering](https://aeroastro.mit.edu/research-areas/computational-science-engineering/))
-
-- [Stanford University Aeronautics and Astronautics: Multidisciplinary Computational Aerosciences](https://aa.stanford.edu/research-impact/multidisciplinary-computational-aerosciences)
