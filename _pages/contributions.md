@@ -11,13 +11,9 @@ redirect_from:
 
 We summarize our contributions in the context of *Computational Methods for Physics Informed Aerospace Design Optimization Under Uncertainties*
 
-### Framework for Design Optimization Under Uncertainty
+![](../files/ouu-do-schematic.png)
 
-> We have contributed an unified design optimization under uncertainty framework that implements several methods for the propagation of uncertainties as shown in Figure. These are based on time dependent finite element analysis along with discrete adjoint-based gradients necessary for OUU applications. The framework has been applied to demonstrate OUU on aerodynamic shape optimization, flexible multibody systems such as robotic arms.
-
-![](../files/2024-ssgm-ouu-canadarm-cover.svg)
-
-<p align="center"><b>Figure:</b> (1), (3), (4) are the easy to implement sampling-based methods for the propagation of uncertainties through computational physics frameworks.</p>
+---
 
 ### Semi Intrusive Stochastic Galerkin Finite Element and Adjoint Method for Propagating Uncertainties through Stochastic PDEs
 
@@ -37,11 +33,21 @@ We summarize our contributions in the context of *Computational Methods for Phys
 
 > Our work resolves the long-standing issue of intrusiveness concerning the classical Stochastic Galerkin method, by contributing a variant referred to as the **semi-intrusive stochastic Galerkin method**, evolved through a surgical application of sampling for the decomposition of stochastic modes.
 
-**Further Reading:**
+---
 
-- [Doctoral Dissertation Chapters]()
-- [AIAA Conference Paper]()
-- [Journal Article]()
+### Adjoint-Enabled Design Optimization Under Uncertainty Framework and Applications
+
+> We have contributed an unified design optimization under uncertainty framework that provides adjoint gradients of the statistics.
+
+> implements several methods for the propagation of uncertainties as shown in Figure. These are based on time dependent finite element analysis along with discrete adjoint-based gradients necessary for OUU applications.
+
+> The framework has been applied to demonstrate OUU on aerodynamic shape optimization, flexible multibody systems such as robotic arms.
+
+![](../files/ouu-span.png)
+
+![](../files/2024-ssgm-ouu-canadarm-cover.svg)
+
+<p align="center"><b>Figure:</b> (1), (3), (4) are the easy to implement sampling-based methods for the propagation of uncertainties through computational physics frameworks.</p>
 
 ### Scalable Rotorcraft Design Optimization Using Discrete Adjoint Sensitivities
 
