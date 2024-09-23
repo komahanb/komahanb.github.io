@@ -7,7 +7,16 @@ redirect_from:
   - /projects.html
 ---
 
+# Computational Projects
+
+
+
+![](../files/ouu-span.png)
+
+![](../files/ouu-do-schematic.png)
+
 ## Linear and Nonlinear Algebra Modules
+
 - Iterative and direct solvers for linear and nonlinear systems
 - [Github Repository](https://github.com/komahanb/linear-nonlinear-algebra)
 

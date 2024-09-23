@@ -10,11 +10,9 @@ redirect_from:
 
 ## (A) Journal Articles
 
-### Semi-Intrusive Stochastic Galerkin Finite Element Method for Adjoint-Based Optimization Under Uncertainty
+### [Semi-Intrusive Stochastic Galerkin Finite Element Method for Adjoint-Based Optimization Under Uncertainty](https://doi.org/10.2514/1.I011254)
 
-> #### Journal of Aerospace Information Systems; Volume 21; Number 9; Year 2024
->
-> #### DOI https://doi.org/10.2514/1.I011254
+> #### [Journal of Aerospace Information Systems](https://arc.aiaa.org/journal/jais); Volume 21; Number 9; Year 2024
 >
 
 [Preprint](../files/2024-ssgm-ouu-canadarm-preprint.pdf)
@@ -29,13 +27,11 @@ The stochastic Galerkin method for the propagation of probabilistically modeled 
 
 ---
 
-### Parallel Finite Element Framework for Rotorcraft Multibody Dynamics and Adjoint Sensitivities
+### [Parallel Finite Element Framework for Rotorcraft Multibody Dynamics and Adjoint Sensitivities]()
 
-> #### AIAA Journal; Volume 57; Number 8; 2019
+> #### [AIAA Journal](https://arc.aiaa.org/journal/aiaaj); Volume 57; Number 8; 2019
 >
 > #### Appeared in the Special Issue on Sensitivity Analysis for Rotorcraft Optimization
->
-> #### DOI https://doi.org/10.2514/1.J056585
 >
 
 [Preprint](../files/2019-rotorcraft-adjoint-optimization-preprint.pdf)
@@ -52,11 +48,9 @@ The hub model parameters for this article were mostly adapted from [The HART-II 
 
 ---
 
-### Unified Framework for Training Point Selection and Error Estimation for Surrogate Models
+### [Unified Framework for Training Point Selection and Error Estimation for Surrogate Models](https://doi.org/10.2514/1.J053064)
 
 > #### AIAA Journal; Volume 53; Number 1; 2015
->
-> #### DOI https://doi.org/10.2514/1.J053064
 >
 
 [Preprint](../files/2015-surrogate-dynamic-preprint.pdf)
@@ -73,13 +67,9 @@ A unified framework for surrogate model training point selection and error estim
 
 ## (B) Conference Papers
 
-### Semi-Intrusive Uncertainty Propagation and Adjoint Sensitivity Analysis Using the Stochastic Galerkin Method
+### [Semi-Intrusive Uncertainty Propagation and Adjoint Sensitivity Analysis Using the Stochastic Galerkin Method](https://arc.aiaa.org/doi/10.2514/6.2020-1146)
 
-> #### 22nd AIAA Non-Deterministic Approaches Conference, Orlando, Florida, Jan 2020
->
-> #### [AIAA Paper 2020-1146](https://arc.aiaa.org/doi/10.2514/6.2020-1146)
->
-> #### DOI https://arc.aiaa.org/doi/10.2514/6.2020-1146
+> #### [22nd AIAA Non-Deterministic Approaches Conference, Orlando, Florida, Jan 2020](https://www.aiaa.org/events-learning/event/2020/01/06/default-calendar/SciTech2020)
 >
 
 [Paper](../files/2020-semi-intrusive-adjoint-paper.pdf)
@@ -94,15 +84,11 @@ Stochastic Galerkin projection techniques provide an efficient method to propaga
 
 ---
 
-### Adjoint-based derivative evaluation methods for flexible multibody systems with rotorcraft applications
+### [Adjoint-based derivative evaluation methods for flexible multibody systems with rotorcraft applications](https://arc.aiaa.org/doi/10.2514/6.2017-1671)
 
 > #### 55th AIAA Aerospace Sciences Meeting, Grapevine, Texas, Jan 2017
 >
 > #### Special Session on Sensitivity Analysis of High-Fidelity Rotorcraft Computations
->
-> #### [AIAA Paper 2017-1671](https://arc.aiaa.org/doi/10.2514/6.2017-1671)
->
-> #### DOI https://arc.aiaa.org/doi/10.2514/6.2017-1671
 >
 
 [Paper](../files/2017-scitech-rotor-adjoint-paper.pdf)
@@ -119,13 +105,11 @@ High-ﬁdelity rotorcraft simulations involve tight coupling between aerodynamic
 
 ---
 
-### A Scalable Adjoint Method for Coupled Flexible Multibody Dynamics
+### [A Scalable Adjoint Method for Coupled Flexible Multibody Dynamics](https://dx.doi.org/10.2514/6.2016-1907)
 
 > #### 57th AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference, San Diego, California, Jan 2016
 >
 > #### [AIAA Paper 2016-1907](https://dx.doi.org/10.2514/6.2016-1907)
->
-> #### DOI https://dx.doi.org/10.2514/6.2016-1907
 >
 
 [PDF](../files/2016-multibody-dynamics-adjoint-paper.pdf)
@@ -140,15 +124,12 @@ High-performance aerospace structures are light-weight, flexible, frequently mad
 
 ---
 
-### Robust Optimization of a Wing Under Structural and Material Uncertainties
+### [Robust Optimization of a Wing Under Structural and Material Uncertainties](https://arc.aiaa.org/doi/abs/10.2514/6.2015-0920)
 
 > #### 17th AIAA Non-Deterministic Approaches Conference, Kissimmee, Florida, Jan 2015
 >
 > #### [AIAA Paper 2015-0920](https://arc.aiaa.org/doi/abs/10.2514/6.2015-0920)
 >
-> #### DOI https://arc.aiaa.org/doi/abs/10.2514/6.2015-0920
->
-> #### Komahan Boopathy, Markus P. Rumpfkeil, and Raymond. M. Kolonay
 
 #### Summary
 
@@ -162,13 +143,11 @@ This paper demonstrates structural sizing optimizations of a fighter wing config
 
 ---
 
-### Robust Optimizations of Structural and Aerodynamic Designs
+### [Robust Optimizations of Structural and Aerodynamic Designs](https://arc.aiaa.org/doi/abs/10.2514/6.2014-2595)
 
 > #### 15th AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference, Atlanta, Georgia, June 2014
 >
 > ### [AIAA Paper 2014-2595](https://arc.aiaa.org/doi/abs/10.2514/6.2014-2595)
->
-> #### DOI https://arc.aiaa.org/doi/abs/10.2514/6.2014-2595
 >
 
 [PDF](../files/2014-surrogate-robust-airfoil-shape-paper.pdf)
@@ -183,13 +162,11 @@ This paper demonstrates the use of polynomial chaos and kriging surrogate models
 
 ---
 
-### A Multivariate Interpolation and Regression Enhanced Kriging Surrogate Model
+### [A Multivariate Interpolation and Regression Enhanced Kriging Surrogate Model](https://arc.aiaa.org/doi/abs/10.2514/6.2013-2964)
 
 > #### 21st AIAA Computational Fluid Dynamics Conference, San Diego, California, June 2013
 >
 > #### [AIAA Paper 2013-2964](https://arc.aiaa.org/doi/abs/10.2514/6.2013-2964)
->
-> #### DOI https://arc.aiaa.org/doi/abs/10.2514/6.2013-2964
 >
 
 [PDF](../files/2013-kriging-mir-dynamic-paper.pdf)
@@ -208,7 +185,6 @@ We present a Kriging surrogate model that is enhanced with a Multivariate Interp
 
 > #### AIAA Region III Student Conference, Chicago, Illinois, April 2013
 >
-> #### Komahan Boopathy and Markus P. Rumpfkeil
 
 [PDF](../files/2013-chicago-kriging-paper.pdf)
 

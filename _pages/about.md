@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a research engineer at ANSYS. I work on the *Fluent* GPU solver development. My passion lies in crafting computational frameworks that analyze the static and dynamic equilibrium of aerospace systems and environmental surroundings.
+I am a research engineer at ANSYS. I work on the *Fluent* GPU solver development. My passion lies in crafting computational frameworks that analyze the static and dynamic equilibrium of aerospace systems and the environmental surroundings.
 
 [Curriculum Vitae (PDF)](../files/KomahanBoopathyCV.pdf)
 
