@@ -9,11 +9,7 @@ redirect_from:
 
 # Computational Projects
 
-
-
-![](../files/ouu-span.png)
-
-![](../files/ouu-do-schematic.png)
+<img src="../files/ouu-span.png" style="zoom:50%;" /> <img src="../files/ouu-do-schematic.png" style="zoom:50%;" />
 
 ## Linear and Nonlinear Algebra Modules
 
