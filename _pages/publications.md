@@ -8,15 +8,14 @@ redirect_from:
   - /publications.html
 ---
 
-## (I) Journal Articles
+## (A) Journal Articles
 
 ### Semi-Intrusive Stochastic Galerkin Finite Element Method for Adjoint-Based Optimization Under Uncertainty
 
-> #### Journal of Aerospace Information Systems; Volume ?; Number ?; Year 2024
+> #### Journal of Aerospace Information Systems; Volume 21; Number 9; Year 2024
 >
-> #### DOI (article to appear online)
+> #### DOI https://doi.org/10.2514/1.I011254
 >
-> #### Komahan Boopathy and Graeme. J. Kennedy
 
 [Preprint](../files/2024-ssgm-ouu-canadarm-preprint.pdf)
 
@@ -38,7 +37,6 @@ The stochastic Galerkin method for the propagation of probabilistically modeled 
 >
 > #### DOI https://doi.org/10.2514/1.J056585
 >
-> #### Komahan Boopathy and Graeme. J. Kennedy
 
 [Preprint](../files/2019-rotorcraft-adjoint-optimization-preprint.pdf)
 
@@ -60,7 +58,6 @@ The hub model parameters for this article were mostly adapted from [The HART-II 
 >
 > #### DOI https://doi.org/10.2514/1.J053064
 >
-> #### Komahan Boopathy and Markus P. Rumpfkeil
 
 [Preprint](../files/2015-surrogate-dynamic-preprint.pdf)
 
@@ -72,7 +69,9 @@ A unified framework for surrogate model training point selection and error estim
 
 <p align="center"><b>Figure:</b> The Kriging surrogate model of lift coefficient built using the developed method for adaptive training point selection for high-fidelity training data and random selection for low-fidelity training data.</p>
 
-### (II) Conference Papers
+---
+
+## (B) Conference Papers
 
 ### Semi-Intrusive Uncertainty Propagation and Adjoint Sensitivity Analysis Using the Stochastic Galerkin Method
 
@@ -82,7 +81,6 @@ A unified framework for surrogate model training point selection and error estim
 >
 > #### DOI https://arc.aiaa.org/doi/10.2514/6.2020-1146
 >
-> #### Komahan Boopathy and Graeme. J. Kennedy
 
 [Paper](../files/2020-semi-intrusive-adjoint-paper.pdf)
 
@@ -106,7 +104,6 @@ Stochastic Galerkin projection techniques provide an efficient method to propaga
 >
 > #### DOI https://arc.aiaa.org/doi/10.2514/6.2017-1671
 >
-> #### Komahan Boopathy and Graeme. J. Kennedy
 
 [Paper](../files/2017-scitech-rotor-adjoint-paper.pdf)
 
@@ -130,7 +127,6 @@ High-ﬁdelity rotorcraft simulations involve tight coupling between aerodynamic
 >
 > #### DOI https://dx.doi.org/10.2514/6.2016-1907
 >
-> #### Graeme J. Kennedy and Komahan Boopathy
 
 [PDF](../files/2016-multibody-dynamics-adjoint-paper.pdf)
 
@@ -174,7 +170,6 @@ This paper demonstrates structural sizing optimizations of a fighter wing config
 >
 > #### DOI https://arc.aiaa.org/doi/abs/10.2514/6.2014-2595
 >
-> #### Komahan Boopathy and Markus P. Rumpfkeil
 
 [PDF](../files/2014-surrogate-robust-airfoil-shape-paper.pdf)
 
@@ -196,7 +191,6 @@ This paper demonstrates the use of polynomial chaos and kriging surrogate models
 >
 > #### DOI https://arc.aiaa.org/doi/abs/10.2514/6.2013-2964
 >
-> #### Komahan Boopathy and Markus P. Rumpfkeil
 
 [PDF](../files/2013-kriging-mir-dynamic-paper.pdf)
 
@@ -228,15 +222,15 @@ Recently, we developed a variable-fidelity hybrid Kriging surrogate model1 that 
 
 <p align="center"><b>Figure:</b> The Kriging surrogate model of the lift coefficient is built using high and low fidelity training points. </p>
 
-### Theses
+---
+
+## (C) Theses
 
 ### Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties
 
 > #### Ph.D. Dissertation
 >
 > #### School of Aerospace Engineering, Georgia Institute of Technology, Atlanta, Georgia, 2020
->
-> #### Komahan Boopathy
 >
 > #### DOI http://hdl.handle.net/1853/63658
 
@@ -291,7 +285,6 @@ The application of the semi-intrusive projection method is shown using a flexibl
 >
 > #### DOI http://rave.ohiolink.edu/etdc/view?acc_num=dayton1398302731
 >
-> #### Komahan Boopathy
 
 [PDF](../files/2014-komahan-boopathy-masters-thesis.pdf)
 
