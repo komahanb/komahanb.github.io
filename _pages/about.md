@@ -17,11 +17,11 @@ My passion lies in crafting simulation frameworks that model and analyze the equ
 
 For more context on the technology and its significance, please read this [post]().
 
-## Current Role (2020 -- )
+## Current Role
 
 I work as a Senior Research Engineer at ANSYS, focussing on the development activities of the Fluent GPU solver offering [orders of magnitude speed-up, and energy savings](https://www.ansys.com/blog/unleashing-the-full-power-of-gpus-for-ansys-fluent) over classical CPU-based HPC in the context of computational fluid dynamics (CFD) simulations. 
 
-## Graduate Research (2012 -- 2020)
+## Graduate Research
 
 I hold a Ph.D. in Aerospace Engineering from the Georgia Institute of Technology. I worked as a research assistant at the [SMDO laboratory](https://gkennedy.gatech.edu/) led by [Prof. Graeme Kennedy](https://scholar.google.com/citations?user=LHqGhxkAAAAJ&hl=en). My research effort was concentrated on the development of a computational [flexible multibody dynamics solver](https://github.com/smdogroup/tacs) with adjoint sensitivity analysis capabilities for the NASA Langley Research Center's [rotorcraft design applications](https://www.youtube.com/watch?v=-HM0KycBvnA). This deterministic computational framework was then naturally extended into an [adjoint-enabled stochastic finite element framework](https://github.com/komahanb/stacs). The latter framework is capable of providing the statistical information on quantities of interest and the adjoint gradient of statistics offering scalability benefits in the context of solving large-scale optimization problems.
 
