@@ -7,17 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-[Curriculum Vitae (PDF)](../files/KomahanBoopathyCV.pdf)
-
 My passion lies in crafting simulation frameworks that model and analyze the equilibrium of aerospace vehicle components with the environmental surroundings, and provide means for design improvement through statistics of quantities of interest and their sensitivities to design variable perturbations. Thus, I undertake as well as take-part in the development of scalable, flexible and robust computational frameworks for scientific computing and targeted applications in aerospace vehicle design contexts such as fixed-wing aircrafts, rotorcrafts and space system robotic arms. 
 
 | ![](../images/fixedwing.png) | ![](../images/rotorcraft.png) | ![](../images/spaceshuttle.png) |
 | :--------------------------: | :---------------------------: | :-----------------------------: |
 |       Aircraft Design        |       Rotorcraft Design       |      Space Systems Design       |
 
-<!--- For more context on the technology and its significance, please read this [post](). -->
 
-## Current Role
 
 I work as a Senior Research Engineer at ANSYS, focused on the development activities of the Fluent GPU solver offering [orders of magnitude speed-up, and energy savings](https://www.ansys.com/blog/unleashing-the-full-power-of-gpus-for-ansys-fluent) over classical CPU-based HPC in the context of computational fluid dynamics (CFD) simulations. 
 
@@ -39,6 +35,10 @@ For more detailed information, the theses and associated presentations shall be 
 | Ph.D   | Aerospace Engineering | Georgia Institute of Technology | 2015 -- 2020 | [Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties](http://hdl.handle.net/1853/63658) | <a href="../files/publications/komahan-boopathy-phd-defense.pdf"><img src="../files/phd-defense-slides-cover.png" alt="Slides Cover" style="width:100px;"></a> |
 | M.S    | Aerospace Engineering | University of Dayton            | 2012 -- 2014 | [Uncertainty Quantification and Optimization Under Uncertainty Using Surrogate Models](http://rave.ohiolink.edu/etdc/view?acc_num=dayton1398302731) | <a href="../files/publications/komahan-boopathy-masters-defense.pdf"><img src="../files/masters-defense-slides-cover.png" alt="Slides Cover" style="width:100px;"></a> |
 | B.Tech | Aerospace Engineering | SRM University                  | 2008 -- 2012 | --                                                           | --                                                           |
+
+[Curriculum Vitae (PDF)](../files/KomahanBoopathyCV.pdf)
+
+<iframe src="../files/KomahanBoopathyCV.pdf" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
 
 ### [Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties](../files/2020-komahan-boopathy-gatech-phd-thesis.pdf) 
 

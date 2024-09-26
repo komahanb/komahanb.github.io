@@ -1,206 +1,50 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
-redirect_from:
-  - /publications	
-  - /publications.html
 ---
 
-## (A) Journal Articles
-
-### [Semi-Intrusive Stochastic Galerkin Finite Element Method for Adjoint-Based Optimization Under Uncertainty](https://doi.org/10.2514/1.I011254)
-
-> #### [Journal of Aerospace Information Systems](https://arc.aiaa.org/journal/jais); Volume 21; Number 9; Year 2024
->
-
-[Preprint](../files/2024-ssgm-ouu-canadarm-preprint.pdf)
-
-#### Summary
-
-The stochastic Galerkin method for the propagation of probabilistically modeled uncertainties can be difficult to apply in practice due to its formulation and the challenge of creating a computational infrastructure to support it. To address these challenges, this work proposes a sampling-based stochastic Galerkin method that leverages existing deterministic analysis and adjoint-based derivative implementations. The proposed formulation is semi-intrusive, since it is implemented using an existing deterministic framework, requiring only the numerical sampling of the deterministic residuals, Jacobians, boundary conditions, and adjoint implementations at nodes in the probabilistic domain. The software architectures to support stochastic generalizations of the deterministic finite element frameworks are presented. This proposed approach is demonstrated on a finite-element framework for flexible multibody dynamics problems. Finally, the semi-intrusive implementation of the stochastic Galerkin method is used to demonstrate adjoint gradient-based optimizations of flexible multibody dynamics systems in the presence of probabilistically modeled uncertainties.
-
-![](../files/2024-ssgm-ouu-canadarm-cover.svg)
-
-<p align="center"><b>Figure:</b> (1), (3), (4) are the easy to implement sampling-based methods for the propagation of uncertainties through computational physics frameworks.</p>
-
----
-
-### [Parallel Finite Element Framework for Rotorcraft Multibody Dynamics and Adjoint Sensitivities]()
-
-> #### [AIAA Journal](https://arc.aiaa.org/journal/aiaaj); Volume 57; Number 8; 2019
->
-> #### Appeared in the Special Issue on Sensitivity Analysis for Rotorcraft Optimization
->
-
-[Preprint](../files/2019-rotorcraft-adjoint-optimization-preprint.pdf)
-
-#### Summary
-
-A parallel finite-element framework for high-fidelity structural dynamic analysis and discrete gradient evaluation using the adjoint method is presented. The framework is intended to be used for gradient-based design optimization of flexible multibody dynamic systems such as rotorcraft. The formulation of governing equations, numerical treatment of kinematic constraints, and the evaluation of functionals of interest and their derivatives are addressed. A minimal set of routines needed to implement the discrete adjoint method are proposed. The governing equations are integrated in time using a diagonally implicit Runge–Kutta method for second-order systems of equations. The formulation of the corresponding time-dependent discrete adjoint method is presented and is numerically verified using the complex-step method. A verification of the dynamics, an assessment of parallel scalability of the analysis and derivative evaluation techniques, and a demonstration of the design capability are presented.  
-
-![](../files/2019-rotorcraft-adjoint-optimization-cover.png)
-
-<p align="center"><b>Figure: </b> A model helicopter hub assembly is improved by optimally distributing the blade thickness using the adjoint-based optimization methodology.</p>
-
-The hub model parameters for this article were mostly adapted from [The HART-II Test: Rotor Wakes and Aeroacoustics with Higher-Harmonic Pitch Control (HHC) Inputs - The Joint German/French/Dutch/US Project (nasa.gov)](https://rotorcraft.arc.nasa.gov/Publications/../files/Yu_AHSF02.pdf)
-
----
-
-### [Unified Framework for Training Point Selection and Error Estimation for Surrogate Models](https://doi.org/10.2514/1.J053064)
-
-> #### AIAA Journal; Volume 53; Number 1; 2015
->
-
-[Preprint](../files/2015-surrogate-dynamic-preprint.pdf)
-
-#### Summary
-
-A unified framework for surrogate model training point selection and error estimation is proposed. Building auxiliary local surrogate models over subdomains of the global surrogate model forms the basis of the proposed  framework. A discrepancy function, defined as the absolute difference between response predictions from local and global surrogate models for randomly chosen test candidates, drives the framework, thereby not requiring any additional exact function evaluations. The benefits of this new approach are demonstrated with analytical test functions and the construction of a two-dimensional aerodynamic database. The results show that the proposed training point selection approach improves the convergence monotonicity and produces more accurate surrogate models compared to random and quasi-random training point selection strategies. The introduced root-mean-square discrepancy and maximum absolute discrepancy exhibit close agreement with the actual root-mean-square error and maximum absolute error, respectively, and are therefore proposed as a measure for the approximation accuracy of surrogate models in applications of practical interest. Multivariate interpolation and regression is employed to build local surrogates, whereas kriging and polynomial chaos expansions serve as global surrogate models in demonstrating the applicability of the proposed framework. 
-
-![](../files/2015-surrogate-dynamic-cover.png)
-
-<p align="center"><b>Figure:</b> The Kriging surrogate model of lift coefficient built using the developed method for adaptive training point selection for high-fidelity training data and random selection for low-fidelity training data.</p>
-
----
-
-## (B) Conference Papers
-
-### [Semi-Intrusive Uncertainty Propagation and Adjoint Sensitivity Analysis Using the Stochastic Galerkin Method](https://arc.aiaa.org/doi/10.2514/6.2020-1146)
-
-> #### [22nd AIAA Non-Deterministic Approaches Conference, Orlando, Florida, Jan 2020](https://www.aiaa.org/events-learning/event/2020/01/06/default-calendar/SciTech2020)
->
-
-[Paper](../files/2020-semi-intrusive-adjoint-paper.pdf)
-
-#### Summary
-
-Stochastic Galerkin projection techniques provide an efficient method to propagate uncertainties through simulations governed by differential equations. However, stochastic Galerkin methods are often challenging to implement within existing deterministic finite-element libraries and may require extensive source code modifications. In this work, we present a semi-intrusive stochastic Galerkin methodology that fully reuses existing deterministic finite-element implementations to perform projection in the probabilistic domain. Furthermore, the proposed semi-intrusive technique enables the use of deterministic derivatives for the adjoint method, yielding a stochastic Galerkin adjoint without further implementation effort. The principal idea is to project the deterministic element residuals, Jacobians, boundary conditions, and adjoint terms on to the probabilistic space prior to assembly of the stochastic finite element system, assuming the deterministic implementations to be black-box. The deterministic implementations must support the ability to update random parameters to enable quadrature in the stochastic space. The proposed semi-intrusive stochastic Galerkin approach is demonstrated using TACS, a finite-element framework with a adjoint-based gradient evaluation methods. The capabilities are demonstrated on several test problems including a flexible multibody dynamics simulation of a four bar mechanism.
-
-![](../files/2020-semi-intrusive-adjoint-cover.png)
-
-<p align="center"><b>Figure:</b> The applied conceptual framework for a probablistic sampling based stochastic Galerkin implementation.</p>
-
----
-
-### [Adjoint-based derivative evaluation methods for flexible multibody systems with rotorcraft applications](https://arc.aiaa.org/doi/10.2514/6.2017-1671)
-
-> #### 55th AIAA Aerospace Sciences Meeting, Grapevine, Texas, Jan 2017
->
-> #### Special Session on Sensitivity Analysis of High-Fidelity Rotorcraft Computations
->
-
-[Paper](../files/2017-scitech-rotor-adjoint-paper.pdf)
-
-#### Summary
-
-High-ﬁdelity rotorcraft simulations involve tight coupling between aerodynamics, structures and structural dynamics. As a step towards developing fully-integrated high-ﬁdelity rotorcraft simulation and gradient-based design optimization tool, this paper presents analysis and discrete-adjoint sensitivity formulations for ﬂexible multibody systems. The governing equations are treated in a descriptor form, as second-order implicit functions of state and design variables. The solution procedures for the governing equations are discussed in the context of different time marching schemes, including backward difference formulas, diagonally implicit Runge–Kutta, Newmark and Adams–Bashforth–Moulton methods. The corresponding time-dependent discrete adjoint derivatives are formulated and numerically veriﬁed with the complex-step method. The assessments of parallel scalability of the implementation are shown along with ﬂexible multibody dynamics applications of the framework.
-
-![](../files/2017-scitech-rotor-adjoint-cover-lagrangian-art.png)
-
-![](../files/2017-scitech-rotor-adjoint-cover-lagrangian-equation.png)
-
-<p align="center"><b>Figure:</b> The discrete adjoint Lagrangian of the backward differences methodology for the integration of second-order differential equations in time. The stationary points of the Lagrangian are the adjoint system of equations in time.</p>
-
----
-
-### [A Scalable Adjoint Method for Coupled Flexible Multibody Dynamics](https://dx.doi.org/10.2514/6.2016-1907)
-
-> #### 57th AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference, San Diego, California, Jan 2016
->
-> #### [AIAA Paper 2016-1907](https://dx.doi.org/10.2514/6.2016-1907)
->
-
-[PDF](../files/2016-multibody-dynamics-adjoint-paper.pdf)
-
-#### Summary
-
-High-performance aerospace structures are light-weight, flexible, frequently made from multiple, connected components, and are subject to dynamic loads. To design structures subject to these conditions, we propose a scalable adjoint method for coupled flexible multibody dynamic simulations. Adjoint-based derivative evaluation methods have been used for design optimization in a wide-array of multidisciplinary applications. However, relatively few authors have developed adjoint methods for flexible multibody dynamic simulations. To address this issue, we develop a modular adjoint-based derivative evaluation method for flexible multibody systems that is designed for high-performance parallel computing environments. We envision that this framework will be useful for the assessment and design of flexible multibody systems that arise in many aerospace applications.
-
-![](../files/2016-multibody-dynamics-adjoint-cover-trebuchet.png)
-
-<p align="center"><b>Figure:</b> Adjoint based solution of range maximization of a projectile in the subject to the physics of coupled multibody dynamics. </p>
-
----
-
-### [Robust Optimization of a Wing Under Structural and Material Uncertainties](https://arc.aiaa.org/doi/abs/10.2514/6.2015-0920)
-
-> #### 17th AIAA Non-Deterministic Approaches Conference, Kissimmee, Florida, Jan 2015
->
-> #### [AIAA Paper 2015-0920](https://arc.aiaa.org/doi/abs/10.2514/6.2015-0920)
->
-
-#### Summary
-
-[PDF](../files/2015-surrogate-robopt-wing-sizing-paper.pdf)
-
-This paper demonstrates structural sizing optimizations of a fighter wing configuration in the presence of uncertainties in structural parameters and material properties. The design variables and input parameters are considered to have uncertainties and are treated as aleatory and epistemic random variables in the optimization process. The aleatory uncertainties are quantified and propagated via inexpensive sampling of kriging surrogate models, whereas the epistemic uncertainties are propagated using a box-constrained optimization approach. The considered loading condition arises from trimmed flight at a 220 degree roll maneuver. The resulting designs are shown to be robust against input anomalies to desired probabilistic levels. 
-
-<img src="../files/2015-surrogate-robopt-wing-sizing-cover.png" style="zoom:150%;" />
-
-<p align="center"><b>Figure:</b> A surrogate-model based robust optimization on a model representative of a figher jet in 220 degrees per second roll maneuver at a speed of mach 0.7. The geometrical parameters of the spars, spar caps, ribs, skins and, connection rods are subject to design sizing optimization methodology. The produced deterministic design is shown on the left and the robust design is shown on the right. The robust wing undergoes lesser deformations under operational loading. </p> 
-
----
-
-### [Robust Optimizations of Structural and Aerodynamic Designs](https://arc.aiaa.org/doi/abs/10.2514/6.2014-2595)
-
-> #### 15th AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference, Atlanta, Georgia, June 2014
->
-> ### [AIAA Paper 2014-2595](https://arc.aiaa.org/doi/abs/10.2514/6.2014-2595)
->
-
-[PDF](../files/2014-surrogate-robust-airfoil-shape-paper.pdf)
-
-#### Summary
-
-This paper demonstrates the use of polynomial chaos and kriging surrogate models, which are enhanced with a dynamic training point selection framework, for the propagation of mixed epistemic and aleatory uncertainties in robust optimization problems. The selection of training points for the two surrogate models is guided by local surrogate models (multivariate interpolation and regression) which are built using a subset of the available training data. The aleatory uncertainties are propagated via extensive sampling of the surrogate models, whereas the epistemic uncertainties are propagated using a box-constrained optimization approach. Robust optimizations are demonstrated for two structural and one aerodynamic test problem. The structural test cases include designing a three-bar truss and a cantilever beam, whereas the aerodynamic test case involves the robust lift-constrained drag minimization of an airfoil under transonic flow conditions.
-
-![](../files/2014-surrogate-robust-airfoil-shape-cover.png)
-
-<p align="center"><b>Figure:</b> The optimized airfoil shapes produced using the developed optimization under uncertainty framework, shows improvement in lift distribution qualities in comparison to the deterministic design. </p>
-
----
-
-### [A Multivariate Interpolation and Regression Enhanced Kriging Surrogate Model](https://arc.aiaa.org/doi/abs/10.2514/6.2013-2964)
-
-> #### 21st AIAA Computational Fluid Dynamics Conference, San Diego, California, June 2013
->
-> #### [AIAA Paper 2013-2964](https://arc.aiaa.org/doi/abs/10.2514/6.2013-2964)
->
-
-[PDF](../files/2013-kriging-mir-dynamic-paper.pdf)
-
-#### Summary
-
-We present a Kriging surrogate model that is enhanced with a Multivariate Interpolation and Regression (MIR) through a dynamic training point selection. We propose an adaptive training point selection strategy where MIR is used as a local surrogate model that guides the construction of the global Kriging surrogate model. The quality of the resulting MIR enhanced Kriging surrogate model is demonstrated for two-, five- and nine-dimensional analytic test functions. The results indicate that the model performs better than currently available Kriging surrogates as well as a previously enhanced Kriging surrogate that uses Dutch Intrapolation as a local surrogate model. Preliminary results of using variable-fidelity data in the construction of the MIR enhanced Kriging surrogate model are also presented and show promise.  
-
-![](../files/2013-kriging-mir-dynamic-cover.png)
-
-<p align="center"><b>Figure:</b> The proposed adaptive framework for training point selection.</p>
-
----
-
-### Building Aerodynamic Databases Using Enhanced Kriging Surrogate Models
-
-> #### AIAA Region III Student Conference, Chicago, Illinois, April 2013
->
-
-[PDF](../files/2013-chicago-kriging-paper.pdf)
-
-#### Summary
-
-Recently, we developed a variable-fidelity hybrid Kriging surrogate model1 that is enhanced by Multivariate Interpolation and Regression (MIR) and adaptive training point selection. We use MIR as a local surrogate model that guides the construction of the global Kriging surrogate. The adaptive training point strategy that we use adds training points at locations where the difference between local (MIR) and global (Kriging) surrogate predictions differ by a given threshold. The model is iteratively updated at these locations of greater uncertainty until convergence or a maximum number of evaluations has been reached. This approach helps us to monitor the progress of the surrogate model construction as well as eliminates unnecessary function evaluations in regions where the surrogate is already doing a good job approximating the exact function. In this paper, we demonstrate the use of our hybrid Kriging model for the construction of a two-dimensional aerodynamic database for a NACA 0012 airfoil in steady and inviscid transonic flow. We study the variations of its lift and drag coefficients for changes in Mach number (0.5 < M < 1.5) and angle of attack (0 ◦ < α < 5 ◦ ). For the purpose of validation of our hybrid surrogate, an “exact” database is obtained through Euler flow solves on a Cartesian mesh of 51×51 = 2601 equispaced nodes. The root mean square error (RMSE) between the exact and surrogate approximated coefficient values over the entire domain are calculated and used to compare the performances of ordinary Kriging approaches and our enhanced Kriging approach. We also investigate the use of variable-fidelity training points to build the surrogate even more efficiently.
-
-
-
-![](../files/2013-chicago-kriging-cover.png)
-
-<p align="center"><b>Figure:</b> The Kriging surrogate model of the lift coefficient is built using high and low fidelity training points. </p>
-
----
-
-## (C) Theses
+## Journal Articles
+
+<div class="gallery">
+{% assign count = 1 %}
+{% for post in site.posts %}
+    {% if post.categories contains "journals" %}
+    <div class="gallery-item">
+        <h3>{{ count }}. <a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <a href="{{ post.url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="gallery-image"/>
+        </a>
+        {% if post.image-caption %}
+        <p class="image-caption">{{ post.image-caption }}</p>
+        {% endif %}
+    </div>
+    {% assign count = count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+</div>
+
+## Conferences Papers
+
+<div class="gallery">
+{% assign conference_count = 1 %}
+{% for post in site.posts %}
+    {% if post.categories contains "conferences" %}
+    <div class="gallery-item">
+        <h3>{{ conference_count }}. <a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <a href="{{ post.url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="gallery-image"/>
+        </a>
+        {% if post.image-caption %}
+        <p class="image-caption">{{ post.image-caption }}</p>
+        {% endif %}
+    </div>
+    {% assign conference_count = conference_count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+</div>
+## Theses
 
 ### Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties
 

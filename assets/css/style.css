@@ -1,0 +1,35 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gallery-item h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.image-caption {
+    font-style: italic;
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+}

@@ -1,12 +1,12 @@
 ---
 layout: single
-title: "Presentation"
+title: "Presentation As Title"
 permalink: /presentation/
 ---
 
 <div class="reveal">
   <div class="slides">
-    <section data-markdown="{{ '/assets/reveal/slides/presentation.md' | relative_url }}" data-separator="^---" data-separator-vertical="^--">
+    <section data-markdown="{{ 'slides.md' | relative_url }}" data-separator="^---" data-separator-vertical="^--" data-transition="slide">
     </section>
   </div>
 </div>
