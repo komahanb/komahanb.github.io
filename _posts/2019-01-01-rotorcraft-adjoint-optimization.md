@@ -16,7 +16,5 @@ A parallel finite-element framework for high-fidelity structural dynamic analysi
 
 The hub model parameters for this article were mostly adapted from [The HART-II Test: Rotor Wakes and Aeroacoustics with Higher-Harmonic Pitch Control (HHC) Inputs - The Joint German/French/Dutch/US Project (nasa.gov)](https://rotorcraft.arc.nasa.gov/Publications/../files/Yu_AHSF02.pdf)
 
-<iframe src="../files/2019-rotorcraft-adjoint-optimization-preprint.pdf" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
-
-<!-- [Preprint](../files/2019-rotorcraft-adjoint-optimization-preprint.pdf) -->
+<iframe src="/files/2019-rotorcraft-adjoint-optimization-preprint.pdf" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
 
