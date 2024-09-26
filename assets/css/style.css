@@ -33,3 +33,13 @@
     color: #555;
     margin-top: 10px;
 }
+
+
+body, p, li {
+    text-align: justify;
+}
+
+/* Exclude the author bio section */
+.author-box, .sidebar, .bio, .widget-area {
+    text-align: left; /* or right/center based on preference */
+}
