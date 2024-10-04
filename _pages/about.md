@@ -20,7 +20,7 @@ Currently, I work as a Senior Research Engineer at ANSYS, focused on the develop
 I hold a Ph.D. in Aerospace Engineering from the Georgia Institute of Technology, working as a research assistant in the [SMDO laboratory](https://gkennedy.gatech.edu/) led by [Prof. Graeme Kennedy](https://scholar.google.com/citations?user=LHqGhxkAAAAJ&hl=en). 
 
 - I concentrated on the development of a computational [flexible multibody dynamics solver](https://github.com/smdogroup/tacs) with adjoint sensitivity analysis capabilities for the NASA Langley Research Center's [rotorcraft design applications](https://www.youtube.com/watch?v=-HM0KycBvnA), offering scalability benefits in the context of solving large-scale optimization problems.
-- This deterministic computational framework was then naturally generalized into an [adjoint-enabled stochastic finite-element, flexible multibody dynamics framework](https://github.com/komahanb/stacs). The stochastic framework is capable of providing statistical information on quantities of interest and adjoint gradient of statistics.
+- This deterministic computational framework was naturally generalized into an [adjoint-enabled stochastic finite-element, flexible multibody dynamics framework](https://github.com/komahanb/stacs). The stochastic framework is capable of providing statistical information on quantities of interest and adjoint gradient of statistics.
 
 I also hold a Master's degree in Aerospace Engineering from the University of Dayton working as a research assistant in [Prof. Markus Rumpfkeil's](https://scholar.google.com/citations?user=zCRdVjYAAAAJ&hl=en) CFD laboratory.
 
