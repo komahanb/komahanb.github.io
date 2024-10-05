@@ -59,3 +59,82 @@ Apart from the technological advancements, it is satisfying to observe how two s
     {% assign count = count | plus: 1 %}
 {% endfor %}
 </div>
+
+---
+
+<div id="aircraft-container" style="width: 100%; height: 500px;"></div>
+
+<!-- Three.js and GLTFLoader (for future use if needed) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r136/three.min.js"></script>
+
+<script>
+    // Setting up the scene, camera, and renderer
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xa9a9a9); // Light gray background
+
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 500, 0.1, 1000);
+    camera.position.set(0, 2, 10); // Setting the camera position for a good view of the aircraft
+
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, 500);
+    document.getElementById('aircraft-container').appendChild(renderer.domElement);
+
+    // Adding lights to the scene
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(10, 10, 10);
+    scene.add(directionalLight);
+
+    const ambientLight = new THREE.AmbientLight(0x404040, 0.6); // Soft light for the overall scene
+    scene.add(ambientLight);
+
+    // Creating a placeholder aircraft with basic shapes
+
+    // Aircraft body - using a cone to simulate the fuselage
+    const bodyGeometry = new THREE.ConeGeometry(0.5, 3, 32);
+    const bodyMaterial = new THREE.MeshStandardMaterial({
+        color: 0xC0C0C0, // Metallic silver color
+        metalness: 0.8,
+        roughness: 0.3
+    });
+    const bodyMesh = new THREE.Mesh(bodyGeometry, bodyMaterial);
+    bodyMesh.rotation.x = Math.PI / 2; // Make the cone horizontal
+    scene.add(bodyMesh);
+
+    // Aircraft wings - using boxes to represent simple wings
+    const wingGeometry = new THREE.BoxGeometry(2, 0.05, 0.5);
+    const wingMaterial = new THREE.MeshStandardMaterial({
+        color: 0x4B4B4B, // Dark gray for the wings
+        metalness: 0.6,
+        roughness: 0.5
+    });
+
+    const leftWing = new THREE.Mesh(wingGeometry, wingMaterial);
+    leftWing.position.set(0, 0, 0.75); // Position left wing
+    scene.add(leftWing);
+
+    const rightWing = new THREE.Mesh(wingGeometry, wingMaterial);
+    rightWing.position.set(0, 0, -0.75); // Position right wing
+    scene.add(rightWing);
+
+    // Aircraft tail - using a small box to represent the tail fin
+    const tailGeometry = new THREE.BoxGeometry(0.2, 0.8, 0.05);
+    const tailMaterial = new THREE.MeshStandardMaterial({
+        color: 0xC0C0C0, // Same metallic silver as the body
+        metalness: 0.8,
+        roughness: 0.3
+    });
+    const tailMesh = new THREE.Mesh(tailGeometry, tailMaterial);
+    tailMesh.position.set(-1.3, 0.4, 0); // Position tail fin at the rear
+    scene.add(tailMesh);
+
+    // Animation loop for a bit of movement
+    function animate() {
+        requestAnimationFrame(animate);
+        bodyMesh.rotation.y += 0.01; // Slowly rotate the aircraft body
+        renderer.render(scene, camera);
+    }
+
+    animate();
+</script>
+
+
