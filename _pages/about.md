@@ -11,9 +11,9 @@ redirect_from:
 
 <b>
 
-My passion lies in crafting simulation frameworks that mathematically-model and computationally-analyze the equilibrium of aerospace vehicle components with their environmental surroundings and operational conditions. My motivations are providing with computational infrastructure for their design improvement by providing access to the statistics of quantities of interest and their corresponding sensitivities to design choices whether through perturbations of variables in a given design configuration, or permutations and combinations of various design configurations. 
+My passion lies in crafting simulation frameworks that mathematically-model and computationally-analyze the equilibrium of aerospace vehicle components with their environmental surroundings and operational conditions. My motivations are providing computational infrastructure for their design improvements through access to the statistics of quantities of interest and their corresponding sensitivities to design choices. Thus, I undertake as well as take-part in the development of scalable, flexible and robust computational frameworks -- for scientific computing and targeted applications in aerospace vehicle design contexts such as fixed-wing aircrafts, rotorcrafts and space system robotic arms. 
 
-Thus, I undertake as well as take-part in the development of scalable, flexible and robust computational frameworks -- for scientific computing and targeted applications in aerospace vehicle design contexts such as fixed-wing aircrafts, rotorcrafts and space system robotic arms. 
+<!--  whether through perturbations of variables in a given design configuration, or permutations and combinations of various design configurations.  -->
 
 | ![](../images/fixedwing.png) | ![](../images/rotorcraft.png) | ![](../images/spaceshuttle.png) |
 | :--------------------------: | :---------------------------: | :-----------------------------: |
@@ -29,8 +29,8 @@ Currently, I work as a Senior Research Engineer at ANSYS, focused on the develop
 
 I hold a Ph.D. in Aerospace Engineering from the Georgia Institute of Technology, conducting research as an assistant in the [SMDO laboratory](https://gkennedy.gatech.edu/) led by [Prof. Graeme Kennedy](https://scholar.google.com/citations?user=LHqGhxkAAAAJ&hl=en). 
 
-- I concentrated on the development of a computational [flexible multibody dynamics framework](https://github.com/smdogroup/tacs) with adjoint sensitivity analysis capabilities for the NASA Langley Research Center's [rotorcraft design applications](https://www.youtube.com/watch?v=-HM0KycBvnA). The deterministic framework provides access to high-fidelity data on the physics and accurate gradients crucial for design improvement cycles in the context of aerospace vehicle design.
-- This deterministic computational framework was also naturally generalized into an [adjoint-enabled stochastic finite-element, flexible multibody dynamics framework](https://github.com/komahanb/stacs). The stochastic framework is capable of providing access to statistical information on the quantities of aerospace structural design interest, and the adjoint gradient of the quantities or their statistics.
+- I concentrated on the development of a computational [flexible multibody dynamics framework](https://github.com/smdogroup/tacs) with adjoint sensitivity analysis capabilities for the NASA Langley Research Center's [rotorcraft design applications](https://www.youtube.com/watch?v=-HM0KycBvnA). The deterministic framework provides access to high-fidelity data on the underlying physics and accurate gradients crucial for carrying out design improvement cycles in the context of aerospace vehicle design.
+- This deterministic computational framework was also naturally generalized into an [adjoint-enabled stochastic finite-element, flexible multibody dynamics framework](https://github.com/komahanb/stacs). The stochastic framework is capable of providing access to statistical information on the quantities from aerospace structural design, and the corresponding adjoint gradients.
 
 I also hold a Master's degree in Aerospace Engineering from the University of Dayton working as a research assistant in [Prof. Markus Rumpfkeil's](https://scholar.google.com/citations?user=zCRdVjYAAAAJ&hl=en) CFD laboratory.
 
