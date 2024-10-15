@@ -7,12 +7,10 @@ author_profile: true
 
 <b>
 
-Primarily, I conduct research on computational methods in aerospace engineering for targeted design optimization under uncertainty applications. I focus on embedding scalability, flexibility, reuse, and robustness as ingredients in the computational frameworks. 
+Primarily, I conduct research on computational methods in aerospace engineering for targeted design optimization under uncertainty applications. I focus on embedding scalability, flexibility, reuse, and robustness as ingredients in the computational frameworks. My research in abstraction is inquiring into the philosophical aspects of the current body of mathematical techniques, and exploring avenues to apply the concepts/principles (either as standalone entities or as interacting groups). I work on:
 
-My research in abstraction is inquiring into the philosophical aspects of the current body of mathematical techniques, and exploring avenues to apply the concepts/principles (either as standalone entities or as interacting groups). Particularly, I enjoy:
-
-- Applying mathematical principles in a targeted manner to improve the limitations of the current configurations in existing frameworks; and
-- Synthesizing advanced mathematical frameworks by creating a sequence of naturally interacting mathematical principles to analyze key physics and provide design intuitions in the context of aerospace engineering vehicle design.
+- applying mathematical principles in a targeted manner to improve the limitations of the current configurations in existing frameworks; and
+- synthesizing advanced mathematical frameworks by creating a sequence of naturally interacting mathematical principles to analyze key physics and provide design intuitions in the context of aerospace engineering vehicle design.
 
 ![A journey across the probabilistic-space-time](/files/images/research-span.png)
 

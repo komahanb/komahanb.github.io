@@ -37,6 +37,10 @@ For the creation of simulation infrastructure, I apply the philosophical perspec
 
 ![](/files/ouu-span-2.png)
 
+<!--
+
 Even within the realm of aerospace engineering, I believe optimization under uncertainty represents a truly vast context: 
 
->  The simplest route to conceive this complexity is to view the subject matter as mathematically segmented domains of space (3-dimensional), time (1-dimensional), probability (N-dimensional), and an overarching engineering design domain (M-dimensional), with interactions among these domains.
+>  The simplest route to conceive this complexity is to view the subject matter as mathematically segmented domains of space (3-dimensional), time (1-dimensional), probability (N-dimensional), and an overarching engineering design domain (M-dimensional), with interactions among these domains
+
+-->

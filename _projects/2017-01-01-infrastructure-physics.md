@@ -1,5 +1,5 @@
 ---
-title: "Computational Methods for High Fidelity Physics" 
+title: "Computational Methods for High Fidelity Spatio-Temporal Physics" 
 image: "/files/images/rotorcraft-time-spiral.png"
 ---
 

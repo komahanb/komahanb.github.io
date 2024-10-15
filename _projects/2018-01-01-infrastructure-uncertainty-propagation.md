@@ -1,6 +1,6 @@
 ```
 title: "Computational Methods for Uncertainty Propagation through PDE Models" 
-image: "files/2020-komahan-boopathy-gatech-phd-cover-ouu.png"
+image: "files/ouu-span.png"
 ```
 
 ## Propagation Methods through PDEs
