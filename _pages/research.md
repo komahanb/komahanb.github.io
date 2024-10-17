@@ -7,37 +7,39 @@ author_profile: true
 
 <b>
 
-Primarily, I conduct research on computational methods in aerospace engineering for targeted design optimization under uncertainty applications. I focus on embedding scalability, flexibility, reuse, and robustness as ingredients in the computational frameworks. My research in abstraction is inquiring into the philosophical aspects of the current body of mathematical techniques, and exploring avenues to apply the concepts/principles (either as standalone entities or as interacting groups). I work on:
+I conduct research on **computational methods in aerospace engineering** for targeted design optimization under uncertainty applications.
 
-- applying mathematical principles in a targeted manner to improve the limitations of the current configurations in existing frameworks; and
-- synthesizing advanced mathematical frameworks by creating a sequence of naturally interacting mathematical principles to analyze key physics and provide design intuitions in the context of aerospace engineering vehicle design.
+<figure style="text-align: center; width: 600px; margin: auto;">
+    <img src="/files/images/research-span2.png" alt="A journey across the probabilistic-space-time" style="width: 100%;">
+</figure>
 
-![A journey across the probabilistic-space-time](/files/images/research-span.png)
+My research in abstraction is an inquiry into the philosophical aspects of the current body of mathematical techniques and exploring avenues to apply mathematical principles in a configuration that alleviates current limitations within the existing computational analysis frameworks, and create new such frameworks with advanced capabilities.
 
-| Area                                                         | Purpose                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Flexible Multibody Dynamics and Computational Fluid Mechanics | Laws concerning the behavior of solids and fluids under forces |
-| Uncertainty Quantification and Statistical Inference         | Theory to incorporate statistics into deterministic computational methods, to model the effect of input uncertainties on outputs of interest |
-| Design Optimization Under Uncertainty                        | Field of optimization that is foundational to accommodate randomness for improving design robustness and reliability |
-| Adjoint and Tangent Sensitivity Analysis                     | Scalable methods for obtaining analytical derivatives for design optimization |
-| Multi-Fidelity Surrogate Modeling                            | Theoretical concepts for cost-effective approximations concerning data interpolation or regression and the augmentation of higher-order information |
-| Software Architecture and High Performance Computing         | Organization of computational modules and handling their complex interactions among themselves and the computer hardware |
-| Blockchain and Artificial Intelligence                       | Hosts the implementation of computational algorithms, handle inter-node communications, on- and off-chain data storage, and achieve automation |
+**<u>Computational Infrastructure:</u>** The first focus is on embedding accuracy, modularity, and scalability, robustness as characteristics of the computational frameworks. The key elements and their corresponding roles within the infrastructure are:
 
-# Projects
+- high-fidelity physics simulations to predict the distribution of physical quantities on spatio-temporal manifolds  
+- uncertainty quantification for obtaining statistics and confidence intervals  
+- sensitivity analysis for higher-order derivative information to augment optimization algorithms and linear-nonlinear solution methods  
 
-<div class="gallery">
-{% assign count = 1 %}
-{% for project in site.projects %}
-    <div class="gallery-item">
-        <h3>{{ count }}. <a href="{{ project.url }}">{{ project.title }}</a></h3>
-        <a href="{{ project.url }}">
-            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="gallery-image"/>
+**<u>Infrastructure Applications:</u>** The second focus is on the aerospace applications of the computational infrastructure in design contexts such as:
+
+- airplane wing shape design 
+- structural sizing of wings
+- helicopter blade design, and
+- space systems robotic arm design
+
+to demonstrate deterministic and robust optimizations.
+
+<div class="publication-collage">
+  {% for post in site.posts %}
+    <div class="publication-item">
+        <a href="{{ post.url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="gallery-image"/>
         </a>
-        {% if project.image-caption %}
-        <p class="image-caption">{{ project.image-caption }}</p>
-        {% endif %}
+        <!-- Optional: If you want to include a caption, uncomment below -->
+        <!-- {% if post.image-caption %}
+        <p class="image-caption">{{ post.image-caption }}</p>
+        {% endif %} -->
     </div>
-    {% assign count = count | plus: 1 %}
-{% endfor %}
+  {% endfor %}
 </div>
