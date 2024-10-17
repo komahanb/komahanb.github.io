@@ -58,11 +58,11 @@ body, p, li {
 
 /* Alternating background colors for the tiles */
 .publication-item:nth-child(odd) {
-  background-color: #FFFFFF ; /* Mild yellow #f9f5d7 */
+  background-color: #f9f5d7 ; /* Mild yellow #f9f5d7 */
 }
 
 .publication-item:nth-child(even) {
-  background-color: #FFFFFF; /* Mild blue or green #d7f5f9 */
+  background-color: #d7f5f9; /* Mild blue or green #d7f5f9 */
 }
 
 .publication-item img {
