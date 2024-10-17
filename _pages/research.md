@@ -25,21 +25,34 @@ My research in abstraction is an inquiry into the philosophical aspects of the c
 
 - airplane wing shape design 
 - structural sizing of wings
-- helicopter blade design, and
+- helicopter blade design
 - space systems robotic arm design
 
-to demonstrate deterministic and robust optimizations.
+to demonstrate deterministic, robust or reliability optimizations.
 
-<div class="publication-collage">
+<div class="publication-collage" id="collage">
   {% for post in site.posts %}
     <div class="publication-item">
         <a href="{{ post.url }}">
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="gallery-image"/>
         </a>
-        <!-- Optional: If you want to include a caption, uncomment below -->
-        <!-- {% if post.image-caption %}
-        <p class="image-caption">{{ post.image-caption }}</p>
-        {% endif %} -->
     </div>
   {% endfor %}
 </div>
+
+<script>
+// JavaScript to shuffle grid items every 5 seconds
+function shuffleGrid() {
+  const collage = document.getElementById('collage');
+  const items = Array.from(collage.children);
+
+  // Shuffle the array of items
+  items.sort(() => Math.random() - 0.5);
+
+  // Remove existing items and append them in the new shuffled order
+  items.forEach(item => collage.appendChild(item));
+}
+
+// Set the shuffle to happen every 5 seconds
+setInterval(shuffleGrid, 5000);
+</script>
