@@ -4,31 +4,31 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
-
 <b>
+# Computational Methods and Infrastructure for Aerospace Design Optimization Under Uncertainty
 
 I conduct research on **computational methods in aerospace engineering** for targeted design optimization under uncertainty applications.
 
-<figure style="text-align: center; width: 600px; margin: auto;">
-    <img src="/files/images/research-span2.png" alt="A journey across the probabilistic-space-time" style="width: 100%;">
+<figure style="text-align: center; width: 100%; max-width: 600px; margin: auto;">
+<img src="/files/images/research-span2.png" alt="A journey across the probabilistic-space-time" style="width: 100%;">
 </figure>
 
-My research in abstraction is an inquiry into the philosophical aspects of the current body of mathematical techniques and exploring avenues to apply mathematical principles in a configuration that alleviates current limitations within the existing computational analysis frameworks, and create new such frameworks with advanced capabilities.
+My research in abstraction examines the philosophical aspects of existing mathematical techniques. I explore how to apply these principles to alleviate the limitations of current computational analysis frameworks and create new frameworks with advanced capabilities.
 
-**<u>Computational Infrastructure:</u>** The first focus is on embedding accuracy, modularity, scalability, and robustness as characteristics of the computational frameworks. The key elements and their corresponding roles within the infrastructure are:
+**[Computational Infrastructure](/research/computational-infrastructure)**: The first focus is on embedding accuracy, modularity, scalability, and robustness as key characteristics of the computational frameworks. The key elements and their corresponding roles within the infrastructure are:
 
-- high-fidelity physics simulations to predict the distribution of physical quantities on spatio-temporal manifolds  
-- uncertainty quantification for obtaining statistics and confidence intervals  
-- sensitivity analysis for higher-order derivative information to augment optimization algorithms and linear-nonlinear solution methods  
+- High-fidelity physics simulations to predict the distribution of physical quantities on spatio-temporal manifolds.
+- Uncertainty quantification for obtaining statistics and confidence intervals.
+- Sensitivity analysis for higher-order derivative information to augment optimization algorithms and linear-nonlinear solution methods.
 
-**<u>Infrastructure Applications:</u>** The second focus is on the aerospace applications of the computational infrastructure in design contexts such as:
+**Infrastructure Applications**: The second focus is on aerospace applications of the computational infrastructure in design contexts such as:
 
-- airplane wing shape design 
-- structural sizing of wings
-- helicopter blade design
-- space systems robotic arm design
+- Airplane wing shape design
+- Structural sizing of wings
+- Helicopter blade design
+- Space systems robotic arm design
 
-to demonstrate benefits from deterministic, robust or reliability optimizations.
+These applications demonstrate benefits from deterministic, robust, or reliability optimizations.
 
 <div class="publication-collage" id="collage">
   {% for post in site.posts %}

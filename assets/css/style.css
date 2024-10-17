@@ -52,8 +52,9 @@ body, p, li {
 
 .publication-item {
   position: relative;
-  padding: 10px; /* Adds some padding between the image and background */
-  border-radius: 5px; /* Optional for rounded corners */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FFFFFF; /* Mild yellow */
 }
 
 /* Alternating background colors for the tiles */
