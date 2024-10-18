@@ -68,6 +68,17 @@ A simulation infrastructure can not rely on a particular set of governing equati
 
 Often the mathematical models of physics are heavily reliant on the assembly of forces from various sources, following a Newtonian perspective. Although convenient for simple problems, this approach is not scalable to multidisciplinary and multi-physics contexts. I study the standardization of this process of obtaining governing equations based on the predicting capabilities of mathematics, instead of expert opinions or physical intuitions. This way even if the physical intuition is not available immediately, the mathematical logic would provide the accurate set of governing equations. I have used elements of this principle in my research work on the stochastic extensions of deterministic physics and adjoint derivatives. 
 
+
+<div class="video-row">
+  <div style="text-align: center;">
+    <!-- Standalone structural response of helicopter rotor dynamics -->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/avUd3ivnw8k" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p><strong>Standalone structural response of helicopter rotor dynamics</strong></p>
+  </div>
+</div>
+
 ###### Computational Mathematics
 
 For the numerical implementation of infrastructure, I apply the philosophical perspective of structuring stochastic calculations around deterministic calculations -- a choice that aids in natural, modular extensions that reuse capabilities implemented in deterministic space-time (DST) when computations are carried out in probabilistic space-time (PST). In this context, I also recognize freedom in the order of applicaiton of spatial, temporal and probabilistic domain principles.
@@ -153,7 +164,7 @@ One of the key outcomes of my research in this context, is the development of th
 - the flexibility in the order of discretization and integration across the probabilistic space-time (PST) domain.
 - the mathematical construction that connects *sampling* and *projection* through *stochastic inner products*, exploiting their invariance to the method of evaluation, whether analytical, numerical, or experimental.
 
-Apart from the technical benefit of alleviating the intrusiveness of Galerkin projection, it is deeply satisfying from a philosophical perspective to witness the harmonious functioning of seemingly disparate concepts—**sampling** and **projection**. This long-standing challenge, which has slowed the method's advancement for two decades, is resolved by the integrated application of these principles. The potential to extend this synthesis to other configurations drives my ongoing research within OUU. My philosophy here is to implement frameworks where projection lends the basis for sampling and sampling lends the means for projection.
+Apart from the technical contribution of alleviating the intrusiveness of Galerkin projection, it is deeply satisfying from a philosophical perspective to witness the harmonious functioning of seemingly disparate concepts—**sampling** and **projection**. This long-standing challenge, which has slowed the method's advancement for two decades, is resolved by the integrated application of these principles. The potential to extend this synthesis to other configurations drives my ongoing research within OUU. My philosophy here is to implement frameworks where projection lends the basis for sampling and sampling lends the means for projection.
 
 <figure style="text-align: center; width: 300px; margin: auto;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/%D0%9B%D0%B0%D0%B3%D1%80%D0%B0%D0%BD%D0%B6.jpg" alt="J. L. Lagrange" style="width: 100%;">

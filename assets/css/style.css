@@ -91,3 +91,15 @@ body, p, li {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+
+.video-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if the screen is too narrow */
+  justify-content: space-between;
+  gap: 20px; /* Adds spacing between videos */
+}
+
+.video-row iframe {
+  flex: 1 1 640px; /* 640px width for larger videos */
+  max-width: 640px;
+}
