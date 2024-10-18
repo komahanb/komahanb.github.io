@@ -127,9 +127,6 @@ One of the key outcomes of my research in this context, is the development of th
 - the flexibility in the order of discretization and integration across the probabilistic space-time (PST) domain.
 - the mathematical construction that connects *sampling* and *projection* through *stochastic inner products*, exploiting their invariance to the method of evaluation, whether analytical, numerical, or experimental.
 
-
-## The Adjoint Method
-
 Apart from the technical benefit of alleviating the intrusiveness of Galerkin projection, it is deeply satisfying from a philosophical perspective to witness the harmonious functioning of seemingly disparate concepts—**sampling** and **projection**. This long-standing challenge, which has slowed the method's advancement for two decades, is resolved by the integrated application of these principles. The potential to extend this synthesis to other configurations drives my ongoing research within OUU. My philosophy here is to implement frameworks where projection lends the basis for sampling and sampling lends the means for projection.
 
 <figure style="text-align: center; width: 300px; margin: auto;">
