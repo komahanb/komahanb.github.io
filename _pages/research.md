@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 <b>
-# Computational Methods and Infrastructure for Aerospace Design Optimization Under Uncertainty
+## Computational Methods and Infrastructure for Aerospace Design Optimization Under Uncertainty
 
 I conduct research on **computational methods in aerospace engineering** for targeted design optimization under uncertainty applications.
 
