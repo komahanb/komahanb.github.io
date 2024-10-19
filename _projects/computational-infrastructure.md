@@ -4,7 +4,7 @@ permalink: /research/computational-infrastructure
 author_profile: true
 ---
 
-In this summary of my research, I focus on the technical aspects and the underlying philosophy as much as possible. For a purely technical discussions, please read this [page]({{site.baseurl}}/publications). 
+In this following summary of my research, I emphasize the technical aspects and the underlying philosophy as much as possible. For focused technical discussions, please review this [page]({{site.baseurl}}/publications). 
 
 ---
 {::nomarkdown}
@@ -42,7 +42,7 @@ The primary motivation is to produce robust and reliable aerospace designs align
   </tr>
 </table>
 
-The elements of this infrastructure are connected to **Deterministic Optimization (DO)** and **Optimization Under Uncertainty (OUU)** algorithms as needed for aerospace applications..
+The elements of this infrastructure are connected to **Deterministic Optimization (DO)** and **Optimization Under Uncertainty (OUU)** algorithms as needed for aerospace applications.
 
 {::nomarkdown}
 </div>
@@ -56,18 +56,7 @@ The elements of this infrastructure are connected to **Deterministic Optimizatio
 
 ### (I) Computational Methods for High Fidelity Spatio-Temporal Physics
 
-The goal is to mathematically model the physical phenomena of interest and computationally analyze the phenomena for the different input space-time geometries from aerospace engineering vehicle design context. In my research, many philosophical choices are carefull made to embed flexibility into computational infrastructure to configurable to the problem at hand at the stage of analysis setup. 
-
-###### Mathematical Physics
-
-A simulation infrastructure can not rely on a particular set of governing equations as it will limit capabilities and expansion after a certain period of time. Thus, I rely on the principle of abstraction to disconnect the mathematical coordinates from physical interpretation.
-
-> My research philosophy here is the examination of mathematical formalisms that yield a set of governing equations, instead of focus on a particular set of equations (e.g. Navier-Stokes, Euler-Lagrange, Maxwell, Lorenz, etc). 
-
-<figure style="text-align: center; width: 300px; margin: auto;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/220px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" alt="René Descartes" style="width: 100%;">   <figcaption style="font-size: 1.0em;">   The  <i>Father of Analytical Geometry</i> for his work in uniting algebra and geometry that laid the foundation for modern analytical geometry, which uses algebraic equations to describe geometric shapes.   <br>     <b>René Descartes [1596 — 1650]</b>   </figcaption> </figure>
-
-Often the mathematical models of physics are heavily reliant on the assembly of forces from various sources, following a Newtonian perspective. Although convenient for simple problems, this approach is not scalable to multidisciplinary and multi-physics contexts. I study the standardization of this process of obtaining governing equations based on the predicting capabilities of mathematics, instead of expert opinions or physical intuitions. This way even if the physical intuition is not available immediately, the mathematical logic would provide the accurate set of governing equations. I have used elements of this principle in my research work on the stochastic extensions of deterministic physics and adjoint derivatives. 
-
+The goal is to mathematically model the physical phenomena of interest and computationally analyze the phenomena for the different input space-time geometries from aerospace engineering vehicle design contexts. 
 
 <div class="video-row">
   <div style="text-align: center;">
@@ -75,23 +64,31 @@ Often the mathematical models of physics are heavily reliant on the assembly of 
     <iframe width="640" height="360" src="https://www.youtube.com/embed/avUd3ivnw8k" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><strong>Standalone structural response of helicopter rotor dynamics</strong></p>
+    <p><strong>The flexible multibody dynamics simulation of rotorcraft hub assembly using the finite-element method in spatial domain, and implicit time integrators in time domain.</strong></p>
   </div>
 </div>
 
-###### Computational Mathematics
+#### Mathematical Physics
 
-For the numerical implementation of infrastructure, I apply the philosophical perspective of structuring stochastic calculations around deterministic calculations -- a choice that aids in natural, modular extensions that reuse capabilities implemented in deterministic space-time (DST) when computations are carried out in probabilistic space-time (PST). In this context, I also recognize freedom in the order of applicaiton of spatial, temporal and probabilistic domain principles.
+<strong> Often the mathematical models of physics are heavily reliant on the assembly of forces from various sources by following the philosophy of Newton.</strong> 
+
+This philosophy works well for problems that are isolated or primarily governed by a single set of principles, like mechanics or electromagnetism in simpler contexts. This won't be readily applicable in situations where there is an inherent scope for the lack of intuition such as multidisciplinary and multi-physics application contexts. The Newtonian approach might oversimplify or ignore the interconnectedness and emergent behaviors that are not easily explained by the sum of forces alone. Philosophically, this calls into question whether physical phenomena are best understood as discrete forces or if a more holistic framework, where different disciplines and forces are interconnected in a way that the Newtonian paradigm doesn't capture, might be more suitable. 
+
+Intrigued by this philosophical question, I study methods to standardize the process of obtaining governing equations of physical systems based on the prediction capabilities of mathematics, focussing on the mechanics of fluids and solids. This way even if the physical intuition is not available immediately, the mathematical logic would provide the accurate set of governing equations necessary for simulations with varying measures of fidelity. I have used elements of this philosophy in my research work on the stochastic extensions of deterministic physics and adjoint derivatives, and demonstrated considerable success in this regard. I am excited to push this philosophy into the broader space of mathematical physics, and apply them back in the context of aerospace design.
+
+<figure style="text-align: center; width: 300px; margin: auto;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/220px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" alt="René Descartes" style="width: 100%;">   <figcaption style="font-size: 1.0em;">   The  <i>Father of Analytical Geometry</i> for his work in uniting algebra and geometry that laid the foundation for modern analytical geometry, which uses algebraic equations to describe geometric shapes.   <br>     <b>René Descartes [1596 — 1650]</b>   </figcaption> </figure>
+
+#### Computational Mathematics
 
 ![](/files/ouu-span-2.png)
 
-I focus on abstracted mathematical models with generic forms and use their state and design variable derivatives to implement the numerical solution framework. 
+For implementation of the computational physics framework, I prefer to work with abstracted mathematical models with generic forms and use their state and design variable derivatives to implement the numerical solution framework. 
 
 - For the implementation of the solution framework, the residuals and their state derivatives (Jacobian) are wired into linear and nonlinear solution methods.
 
 - For the adjoint implementation, the abstracted functions, and their state and design variable derivatives are suffcient to implement an adjoint gradient assembly framework. 
 
-**Physics-Agnostic Perspective:** The physical interpretation of what the states are in reality does not matter to computational mathematics frameworks.
+This <strong> physics-agnostic perspective</strong> keeps the implementation abstracted from the physics, and thus the framework can be configured in different ways for the particular problem setup. This holds in a logical sense because the physical interpretation of what the states are in reality does not matter to computational mathematics frameworks.
 
 {::nomarkdown}
 </div>
@@ -105,7 +102,7 @@ I focus on abstracted mathematical models with generic forms and use their state
 
 ### (II) Computational Sensitivity Analysis Methods
 
-My focus in this subject is along two trajectories: (i) to obtain derivatives necessary to solve large scale optimization problems from aerospace vehicle design, and (ii) explorations into the integration of sensitivity analysis within the context of linear/non-linear solution algorithms.
+My research in this subspace is along two trajectories: (i) to obtain derivatives necessary to solve large scale optimization problems from aerospace vehicle design, and (ii) explorations into the integration of sensitivity analysis within the context of linear/non-linear solution algorithms.
 
 ![](/files/derivative-methods.png)
 
@@ -146,19 +143,27 @@ I also consider other possibilities to obtain design variable derivatives. I stu
 
 ### (III) Uncertainty Propagation Methods through PDE Models
 
-In this context, I explore the application of probabilistic extensions to deterministic frameworks for synthesizing new methods of uncertainty propagation through PDEs that build upon the existing methods. A **discretization-order agnostic** and **physics independent** application of spatial, temporal, and probabilistic discretization principles can yield diverse frameworks for uncertainty propagation. 
+In this context, I explore the application of probabilistic extensions to deterministic frameworks for synthesizing new methods of uncertainty propagation through PDEs that build upon the existing methods. In this context, I recognize freedom in the order of application of spatial, temporal and probabilistic domain principles.
+
+<!-- 
+Therefore, for numerical implementations of infrastructure, I have applied the philosophical perspective of structuring stochastic calculations around deterministic calculations -- a choice that aids in natural, modular extensions that reuse capabilities implemented in deterministic space-time (DST) when computations are carried out in probabilistic space-time (PST). 
+
+A **discretization-order agnostic** and **physics independent** application of spatial, temporal, and probabilistic discretization principles can yield diverse frameworks for uncertainty propagation. -->
 
 <figure style="text-align: center; width: 100%;">
   <img src="/files/2024-ssgm-ouu-canadarm-cover.png" alt="Uncertainty Propagation Methods" style="max-width: 100%;">
   <figcaption style="font-size: 1.0em;">Figure: Key methods for uncertainty propagation using probabilistic and deterministic frameworks</figcaption>
 </figure>
 
+
+<!-- 
 | **Method**                                    | **Description**                                              |
 | --------------------------------------------- | ------------------------------------------------------------ |
 | Stochastic Sampling & Surrogate Models        | This method uses sampling nodes to generate surrogate models, approximating PDE outputs with lower computational costs. |
 | Stochastic Galerkin Projection                | Introduces spectral expansions and solves SPDEs, generating output spectral modes directly from the assembly of the SPDE. |
 | Stochastic Spectral Projection                | Combines spectral expansions with sampling nodes for deterministic PDE solutions, producing output spectral modes through post-processing. |
 | Semi-Intrusive Stochastic Galerkin Projection | Integrates spectral expansions and sampling nodes to assemble and solve sampled matrices and vectors for SPDEs. |
+-->
 
 One of the key outcomes of my research in this context, is the development of the **[Semi-Intrusive Stochastic Galerkin Projection Method](https://komahanb.github.io/journals/ssgm-ouu-canadarm/)**, which is a *simplified* a.k.a. *samplified* version of the Stochastic Galerkin method. This method draws from:
 - the flexibility in the order of discretization and integration across the probabilistic space-time (PST) domain.

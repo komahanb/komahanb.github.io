@@ -74,6 +74,8 @@ For more detailed information, the theses and associated presentations shall be 
 {% endfor %}
 </div>
 
-# Curriculum Vitae
+<b>
+
+# [Curriculum Vitae](/files/KomahanBoopathyCV.pdf)
 
 <iframe src="../files/KomahanBoopathyCV.pdf" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
