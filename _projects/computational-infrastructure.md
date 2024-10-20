@@ -68,8 +68,9 @@ The goal is to mathematically model the physical phenomena of interest and compu
   </div>
 </div>
 
+#### <u>Mathematical Physics</u>
 
-#### Mathematical Physics
+<b>
 
 <strong> Often the mathematical models of physics are heavily reliant on the assembly of forces from various sources by following the philosophy of Newton.</strong> 
 
@@ -79,7 +80,9 @@ Intrigued by this philosophical question, I study methods to standardize the pro
 
 <figure style="text-align: center; width: 300px; margin: auto;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/220px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" alt="René Descartes" style="width: 100%;">   <figcaption style="font-size: 1.0em;">   The  <i>Father of Analytical Geometry</i> for his work in uniting algebra and geometry that laid the foundation for modern analytical geometry, which uses algebraic equations to describe geometric shapes.   <br>     <b>René Descartes [1596 — 1650]</b>   </figcaption> </figure>
 
-#### Computational Mathematics
+#### <u>Computational Mathematics</u>
+
+<b>
 
 ![](/files/ouu-span-2.png)
 
@@ -107,13 +110,13 @@ My research in this subspace is along two trajectories: (i) to obtain derivative
 
 ![](/files/derivative-methods.png)
 
-###### **The Adjoint Method for Design Variable Derivatives**
+#### <u>The Adjoint Method for Design Variable Derivatives</u>
 
 My special interest is on the adjoint-based methods for sensitivity analysis. It offers scalability in terms of the number of design variables. I have focused on formulating and implementing sensitivity analysis methods in the time-domain with several order-agnostic multi-step and multi-stage time methods in deterministic-space-time (DST). This study uncovers the broader structure of the discrete-adjoint equations:
 
 > Although the schemes come with various forms, the overarching structure that is common to all schemes is that the partial derivatives of the residuals and functions can be combined using different weights to implement the discrete adjoint methods. 
 
-###### **The Adjoint Method in Artificial Intelligence**
+#### <u>The Adjoint Method in Artificial Intelligence</u>
 
 The adjoint method, traditionally used in optimization and sensitivity analysis, provides a framework for efficiently computing the derivatives of output quantities of interest with respect to input variables. 
 
@@ -121,7 +124,7 @@ The adjoint method, traditionally used in optimization and sensitivity analysis,
 
 In both fields, the efficient computation of these gradients enables large-scale optimization across complex systems, bridging analytical methods with modern computational intelligence.
 
-###### **Higher-Dimensional Numbers Based On Algebraic Structures and Differential Operators**
+#### <u>Higher-Dimensional Numbers Based On Algebraic Structures and Differential Operators</u>
 
 I also consider other possibilities to obtain design variable derivatives. I study the construction of higher-dimensional numbers that can provide first, second, and other higher-order derivatives, when needed. This research is building upon the observations from complex-number arithmetics to four-, and eight-dimensional numbers.
 
