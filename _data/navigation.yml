@@ -1,7 +1,10 @@
 main:
   - title: "Research"
     url: /research/
-    
+
+  - title: "Optimization Under Uncertainty"
+    url: /computational-infrastructure/
+  
   - title: "Publications"
     url: /publications/
     

@@ -1,6 +1,7 @@
 ---
-title: "Computational Infrastructure for Aerospace Optimization Under Uncertainty"
-permalink: /research/computational-infrastructure
+layout: single
+title: "Optimization Under Uncertainty"
+permalink: /computational-infrastructure/
 author_profile: true
 ---
 
