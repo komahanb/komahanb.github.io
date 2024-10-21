@@ -15,7 +15,7 @@ I conduct research on **computational methods in aerospace engineering** for tar
 
 My research in abstraction examines the philosophical aspects of existing mathematical techniques. I explore how to apply  mathematical principles to alleviate the limitations of current computational analysis frameworks and create new frameworks with advanced capabilities.
 
-**[Computational Infrastructure]({{site.baseurl}}/research/computational-infrastructure)**: The first focus is on the creational aspects of optimization under uncertainty infrastructure for aerospace design composed of key elements such as:
+**[Computational Infrastructure]({{site.baseurl}}/computational-infrastructure)**: The first focus is on the creational aspects of optimization under uncertainty infrastructure for aerospace design composed of key elements such as:
 
 - High-fidelity physics framework predicting the distribution of physical quantities on spatio-temporal manifolds.
 
