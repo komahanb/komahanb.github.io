@@ -65,7 +65,7 @@ The goal is to mathematically model the physical phenomena of interest and compu
     <iframe width="640" height="360" src="https://www.youtube.com/embed/avUd3ivnw8k" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><strong>The flexible multibody dynamics simulation of rotorcraft hub assembly using the finite-element method in spatial-domain, and diagonally implicit Runge--Kutta integration in time-domain.</strong></p>
+    <p><strong>The flexible multibody dynamics simulation of rotorcraft hub assembly using the finite-element integration in spatial-domain, and the diagonally implicit Runge--Kutta integration in time-domain.</strong></p>
   </div>
 </div>
 
