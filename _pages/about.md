@@ -46,7 +46,7 @@ I hold a Ph.D. in Aerospace Engineering from the Georgia Institute of Technology
 
 I also hold a Master's degree in Aerospace Engineering from the University of Dayton working as a research assistant in [Prof. Markus Rumpfkeil's](https://scholar.google.com/citations?user=zCRdVjYAAAAJ&hl=en) CFD laboratory.
 
--  I focused on the development of applied methods for aerodynamic shape optimization under uncertainty using surrogate models, as well as pure mathematical methods in abstraction for multi-surrogate based error-estimation and training-point-selection.
+-  I focused on the development of applied methods for aerodynamic shape optimization under uncertainty using surrogate models, as well as  mathematical techniques in abstraction for multi-surrogate based error-estimation and training-point-selection -- utilizing higher-order derivatives and variable-fidelity training data.
 
 For more detailed information, the theses and associated presentations shall be accessed below:
 

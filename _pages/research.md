@@ -7,8 +7,6 @@ author_profile: true
 <b>
 ## Computational Sciences for Aerospace Design Optimization Under Uncertainty
 
-I conduct research on **computational methods in aerospace engineering** for targeted design optimization under uncertainty applications.
-
 <figure style="text-align: center; width: 100%; max-width: 600px; margin: auto;">
 <img src="/files/images/research-span2.png" alt="A journey across the probabilistic-space-time" style="width: 100%;">
 </figure>
@@ -23,7 +21,7 @@ My research in abstraction examines the philosophical aspects of existing mathem
 
 - Uncertainty quantification framework providing statistics and confidence intervals.
 
-I strive for features such as accuracy, adaptability, modularity, scalability, and robustness as characteristics of the infrastructure.
+The mechanics of interactions among these infrastructure elements is a key challenge. I strive for features such as accuracy, adaptability, modularity, scalability, and robustness as characteristics of the infrastructure. 
 
 **Infrastructure Applications**: The second focus is on targeted aerospace applications in design contexts such as:
 
