@@ -8,6 +8,7 @@ author_profile: true
 In this following summary of my research, I emphasize the technical aspects and the underlying philosophy as much as possible. For focused technical discussions, please review this [page]({{site.baseurl}}/publications). 
 
 ---
+
 {::nomarkdown}
 <div style="background-color: #f0f0f0; padding: 20px;">
 {:/}
@@ -55,46 +56,27 @@ The elements of this infrastructure are connected to **Deterministic Optimizatio
 <div style="background-color: lightyellow; padding: 20px;">
 {:/}
 
-### (I) Computational Methods for High Fidelity Spatio-Temporal Physics
+### (I) Uncertainty Propagation Methods through PDE Models
 
-The goal is to mathematically model the physical phenomena of interest and computationally analyze the phenomena for the different input space-time geometries from aerospace engineering vehicle design contexts. 
+I explore the application of probabilistic extensions to deterministic frameworks for synthesizing new methods of uncertainty propagation through PDEs. In this context, I recognize freedom in the sequence of application of spatial, temporal and probabilistic domain principles.  I take the philosophical perspective of structuring stochastic calculations around deterministic calculations -- a choice that aids in natural, modular extensions that reuse capabilities implemented in deterministic space-time (DST) when computations are carried out in probabilistic space-time (PST).
 
-<div class="video-row">
-  <div style="text-align: center;">
-    <!-- Standalone structural response of helicopter rotor dynamics -->
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/avUd3ivnw8k" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><strong>The flexible multibody dynamics simulation of rotorcraft hub assembly using the finite-element integration in spatial-domain, and the diagonally implicit Runge--Kutta integration in time-domain.</strong></p>
-  </div>
-</div>
+<figure style="text-align: center; width: 100%;">
+  <img src="/files/2024-ssgm-ouu-canadarm-cover.png" alt="Uncertainty Propagation Methods" style="max-width: 100%;">
+  <figcaption style="font-size: 1.0em;">Figure: A schematic representation of combinatorics in the placement of sampling and spectral expansion principles forming different UQ methods. The use of sampling reduces intrusiveness. </figcaption>
+</figure>
 
-#### <u>Mathematical Physics</u>
+One of the key outcomes of my research in this context, is the development of the **[Semi-Intrusive Stochastic Galerkin Projection Method](https://komahanb.github.io/journals/ssgm-ouu-canadarm/)**, which is a *simplified* (*samplified*) version of the Stochastic Galerkin method. This method draws from:
+- the flexibility in the order of discretization and integration across the probabilistic space-time (PST) domain.
+- the mathematical construction that connects *sampling* and *projection* through *stochastic inner products*, exploiting their invariance to the method of evaluation, whether analytical, numerical, or experimental.
 
-<b>
+Apart from the technical contribution of alleviating the intrusiveness of the Galerkin projection, it is deeply satisfying from a philosophical perspective to witness the harmonious functioning of seemingly disparate concepts—**sampling** and **projection**. A long-standing challenge, which has slowed the Galerkin projection's advancement for roughly two decades, is resolved through an integrated application of these principles. 
 
-<strong> Often the mathematical models of physics are heavily reliant on the assembly of forces from various sources by following the philosophy of Newton.</strong> 
+> The potential to extend this synthesis to other configurations drives my ongoing research within OUU. My philosophy here is to implement methods such that *projection lends the basis for sampling* and *sampling lends the means for projection*, forming a mutually beneficial arrangement.
 
-This philosophy works well for problems that are isolated or primarily governed by a single set of principles, like mechanics or electromagnetism in simpler contexts. This will not be readily applicable in situations where there is an inherent scope for lack of intuition such as multidisciplinary and multi-physics application contexts. The Newtonian approach might oversimplify or ignore the interconnectedness and emergent behaviors that are not easily explained by the sum of forces alone. Philosophically, this calls into question whether physical phenomena are best understood as discrete forces or if a more holistic framework -- where different disciplines and forces are interconnected in a way that the Newtonian paradigm does not capture --  might be more suitable. 
-
-Intrigued by this philosophical question, I study methods to standardize the process of obtaining governing equations of physical systems based on the prediction capabilities of mathematics, focusing first on the mechanics of fluids and solids. This way even if the physical intuition is not available immediately, the mathematical logic would provide the accurate set of governing equations necessary for simulations with varying measures of fidelity. I have used elements of this philosophy in my research work on the stochastic extensions of deterministic physics and adjoint derivatives, and demonstrated considerable success in this regard. I am excited to push this philosophy into the broader space of mathematical physics, and apply the technical advances back in the context of aerospace design.
-
-<figure style="text-align: center; width: 300px; margin: auto;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/220px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" alt="René Descartes" style="width: 100%;">   <figcaption style="font-size: 1.0em;">   The  <i>Father of Analytical Geometry</i> for his work in uniting algebra and geometry that laid the foundation for modern analytical geometry, which uses algebraic equations to describe geometric shapes.   <br>     <b>René Descartes [1596 — 1650]</b>   </figcaption> </figure>
-
-#### <u>Computational Mathematics</u>
-
-<b>
-
-![](/files/ouu-span-2.png)
-
-For implementation of the computational physics framework, I prefer to work with abstracted mathematical models with generic forms and merely use their state and design variable derivatives to implement the numerical solution framework. 
-
-- For implementation of the solution framework, the residuals and their state derivatives (Jacobian) are wired into linear and nonlinear solution methods.
-
-- For adjoint implementation, the abstracted functions, and their state and design variable derivatives are sufficient to implement an adjoint gradient assembly framework. 
-
-I take a <strong> physics-agnostic </strong>perspective to keep the implementation abstracted from the physics, and thus the framework can be configured in different ways for the particular problem setup. This holds in a logical sense because the physical interpretation of what the states are in reality does not matter to computational mathematics frameworks.
-
+<figure style="text-align: center; width: 300px; margin: auto;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/%D0%9B%D0%B0%D0%B3%D1%80%D0%B0%D0%BD%D0%B6.jpg" alt="J. L. Lagrange" style="width: 100%;">
+  <figcaption style="font-size: 1.0em;">As long as algebra and geometry have been separated, their progress **has** been slow and their uses limited; but when these two sciences have been united, they have lent **each other mutual** forces and marched together towards perfection. <b>J. L. Lagrange [1736 — 1813]</b></figcaption>
+</figure>
 {::nomarkdown}
 </div>
 {:/}
@@ -143,27 +125,46 @@ I also consider other possibilities to obtain design variable derivatives. I stu
 <div style="background-color: lightyellow; padding: 20px;">
 {:/}
 
-### (III) Uncertainty Propagation Methods through PDE Models
+### (III) Computational Methods for High Fidelity Spatio-Temporal Physics
 
-I explore the application of probabilistic extensions to deterministic frameworks for synthesizing new methods of uncertainty propagation through PDEs. In this context, I recognize freedom in the sequence of application of spatial, temporal and probabilistic domain principles.  I take the philosophical perspective of structuring stochastic calculations around deterministic calculations -- a choice that aids in natural, modular extensions that reuse capabilities implemented in deterministic space-time (DST) when computations are carried out in probabilistic space-time (PST).
+The goal is to mathematically model the physical phenomena of interest and computationally analyze the phenomena for the different input space-time geometries from aerospace engineering vehicle design contexts. 
 
-<figure style="text-align: center; width: 100%;">
-  <img src="/files/2024-ssgm-ouu-canadarm-cover.png" alt="Uncertainty Propagation Methods" style="max-width: 100%;">
-  <figcaption style="font-size: 1.0em;">Figure: A schematic representation of combinatorics in the placement of sampling and spectral expansion principles forming different UQ methods. The use of sampling reduces intrusiveness. </figcaption>
-</figure>
+<div class="video-row">
+  <div style="text-align: center;">
+    <!-- Standalone structural response of helicopter rotor dynamics -->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/avUd3ivnw8k" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p><strong>The flexible multibody dynamics simulation of rotorcraft hub assembly using the finite-element integration in spatial-domain, and the diagonally implicit Runge--Kutta integration in time-domain.</strong></p>
+  </div>
+</div>
 
-One of the key outcomes of my research in this context, is the development of the **[Semi-Intrusive Stochastic Galerkin Projection Method](https://komahanb.github.io/journals/ssgm-ouu-canadarm/)**, which is a *simplified* (*samplified*) version of the Stochastic Galerkin method. This method draws from:
-- the flexibility in the order of discretization and integration across the probabilistic space-time (PST) domain.
-- the mathematical construction that connects *sampling* and *projection* through *stochastic inner products*, exploiting their invariance to the method of evaluation, whether analytical, numerical, or experimental.
+#### <u>Mathematical Physics</u>
 
-Apart from the technical contribution of alleviating the intrusiveness of the Galerkin projection, it is deeply satisfying from a philosophical perspective to witness the harmonious functioning of seemingly disparate concepts—**sampling** and **projection**. A long-standing challenge, which has slowed the Galerkin projection's advancement for roughly two decades, is resolved through an integrated application of these principles. 
+<b>
 
-> The potential to extend this synthesis to other configurations drives my ongoing research within OUU. My philosophy here is to implement methods such that *projection lends the basis for sampling* and *sampling lends the means for projection*, forming a mutually beneficial arrangement.
+<strong> Often the mathematical models of physics are heavily reliant on the assembly of forces from various sources by following the philosophy of Newton.</strong> 
 
-<figure style="text-align: center; width: 300px; margin: auto;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/%D0%9B%D0%B0%D0%B3%D1%80%D0%B0%D0%BD%D0%B6.jpg" alt="J. L. Lagrange" style="width: 100%;">
-  <figcaption style="font-size: 1.0em;">As long as algebra and geometry have been separated, their progress **has** been slow and their uses limited; but when these two sciences have been united, they have lent **each other mutual** forces and marched together towards perfection. <b>J. L. Lagrange [1736 — 1813]</b></figcaption>
-</figure>
+This philosophy works well for problems that are isolated or primarily governed by a single set of principles, like mechanics or electromagnetism in simpler contexts. This will not be readily applicable in situations where there is an inherent scope for lack of intuition such as multidisciplinary and multi-physics application contexts. The Newtonian approach might oversimplify or ignore the interconnectedness and emergent behaviors that are not easily explained by the sum of forces alone. Philosophically, this calls into question whether physical phenomena are best understood as discrete forces or if a more holistic framework -- where different disciplines and forces are interconnected in a way that the Newtonian paradigm does not capture --  might be more suitable. 
+
+Intrigued by this philosophical question, I study methods to standardize the process of obtaining governing equations of physical systems based on the prediction capabilities of mathematics, focusing first on the mechanics of fluids and solids. This way even if the physical intuition is not available immediately, the mathematical logic would provide the accurate set of governing equations necessary for simulations with varying measures of fidelity. I have used elements of this philosophy in my research work on the stochastic extensions of deterministic physics and adjoint derivatives, and demonstrated considerable success in this regard. I am excited to push this philosophy into the broader space of mathematical physics, and apply the technical advances back in the context of aerospace design.
+
+<figure style="text-align: center; width: 300px; margin: auto;">   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/220px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" alt="René Descartes" style="width: 100%;">   <figcaption style="font-size: 1.0em;">   The  <i>Father of Analytical Geometry</i> for his work in uniting algebra and geometry that laid the foundation for modern analytical geometry, which uses algebraic equations to describe geometric shapes.   <br>     <b>René Descartes [1596 — 1650]</b>   </figcaption> </figure>
+
+#### <u>Computational Mathematics</u>
+
+<b>
+
+![](/files/ouu-span-2.png)
+
+For implementation of the computational physics framework, I prefer to work with abstracted mathematical models with generic forms and merely use their state and design variable derivatives to implement the numerical solution framework. 
+
+- For implementation of the solution framework, the residuals and their state derivatives (Jacobian) are wired into linear and nonlinear solution methods.
+
+- For adjoint implementation, the abstracted functions, and their state and design variable derivatives are sufficient to implement an adjoint gradient assembly framework. 
+
+I take a <strong> physics-agnostic </strong>perspective to keep the implementation abstracted from the physics, and thus the framework can be configured in different ways for the particular problem setup. This holds in a logical sense because the physical interpretation of what the states are in reality does not matter to computational mathematics frameworks.
+
 {::nomarkdown}
 </div>
 {:/}
