@@ -10,8 +10,7 @@ author_profile: true
 <figure style="text-align: center; width: 100%; max-width: 600px; margin: auto;">
 <img src="/files/images/research-span2.png" alt="A journey across the probabilistic-space-time" style="width: 100%;">
 </figure>
-
-My research in abstraction examines the philosophical aspects of existing mathematical techniques. I explore how to apply  mathematical principles to alleviate the limitations of current computational analysis frameworks and create new frameworks with advanced capabilities.
+My research in abstraction is the examination of philosophical aspects of existing mathematical techniques to alleviate the limitations of computational analysis methods and synthesize new methods with advance capabilities such as accuracy, adaptability, modularity, scalability, and robustness.
 
 **[Computational Infrastructure]({{site.baseurl}}/computational-infrastructure)**: The first focus is on the creational aspects of optimization under uncertainty infrastructure for aerospace design composed of key elements such as:
 
@@ -21,7 +20,7 @@ My research in abstraction examines the philosophical aspects of existing mathem
 
 - Uncertainty quantification framework providing statistics and confidence intervals.
 
-The mechanics of interactions among these infrastructure elements is a key challenge. I strive for features such as accuracy, adaptability, modularity, scalability, and robustness as characteristics of the infrastructure. 
+The mechanics of interactions among these infrastructure elements is a key challenge. 
 
 **Infrastructure Applications**: The second focus is on targeted aerospace applications in design contexts such as:
 
