@@ -20,7 +20,9 @@ My research in abstraction is the examination of philosophical aspects of existi
 
 - Uncertainty quantification framework providing statistics and confidence intervals.
 
-The mechanics of interactions among these infrastructure elements is a key challenge. 
+The mechanics of interactions among these infrastructure elements is a key challenge. It is a critical piece of technology required for **Multidisciplinary Optimization Under Uncertainty** efforts such as [NASA CFD Vision 2030](https://www.cfd2030.com/).
+
+![](https://www.cfd2030.com/report/CFD-Vision-2030-Roadmap-2020-wide.png)
 
 **Infrastructure Applications**: The second focus is on targeted aerospace applications in design contexts such as:
 
