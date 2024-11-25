@@ -103,3 +103,33 @@ body, p, li {
   flex: 1 1 640px; /* 640px width for larger videos */
   max-width: 640px;
 }
+
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, transform-origin 0.3s ease;
+    transform: scale(1); /* Default scale */
+    transform-origin: center; /* Default zoom origin */
+}
+
+.image-slider img:hover {
+    transform: scale(1.2); /* Zoom in by 200% */
+}
+
+
+.zoom-out-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth zoom-out effect */
+    transform: scale(1); /* Default scale */
+}
+
+.zoom-out-image:hover {
+    transform: scale(1.2); /* Scale down to 90% on hover */
+}
