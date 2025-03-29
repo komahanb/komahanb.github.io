@@ -7,9 +7,18 @@ redirect_from:
   - /about.html
 ---
 
-<b>
+Currently, I work as a Senior Research Engineer at ANSYS, focused on the development activities of the Fluent GPU solver offering [orders of magnitude speed-up, and energy savings](https://www.ansys.com/blog/unleashing-the-full-power-of-gpus-for-ansys-fluent) over classical CPU-based HPC in the context of computational fluid dynamics (CFD) simulations. I serve on the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Non-Deterministic Approaches (Full Member) and Multidisciplinary Design Optimization (Friend Member).
 
-<b>
+```mermaid
+flowchart TD
+    A[Philosophy] --> B(Mathematics) 
+    B --- C[Physics] & D[Computing]
+    E[Computational Aerosciences]
+    C --- E
+    D --- E
+```
+
+## Passion
 
 My passion lies in crafting simulation frameworks that mathematically-model and computationally-analyze the equilibrium of aerospace vehicle components with their environmental surroundings and operational conditions. My motivations are providing computational infrastructure for their design improvements through access to the statistics of quantities of interest and their corresponding sensitivities to design choices. Thus, I undertake as well as take-part in the development of scalable, flexible and robust computational frameworks -- for scientific computing and targeted applications in aerospace vehicle design contexts such as fixed-wing aircrafts, rotorcrafts and space system robotic arms. 
 
@@ -20,10 +29,6 @@ My passion lies in crafting simulation frameworks that mathematically-model and 
 |       Aircraft Design        |       Rotorcraft Design       |      Space Systems Design       |
 
 <b>
-
-<b>
-
-Currently, I work as a Senior Research Engineer at ANSYS, focused on the development activities of the Fluent GPU solver offering [orders of magnitude speed-up, and energy savings](https://www.ansys.com/blog/unleashing-the-full-power-of-gpus-for-ansys-fluent) over classical CPU-based HPC in the context of computational fluid dynamics (CFD) simulations. 
 
 ## Graduate Research
 
