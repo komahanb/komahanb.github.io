@@ -9,14 +9,7 @@ redirect_from:
 
 Currently, I work as a Senior Research Engineer at ANSYS, focused on the development activities of the Fluent GPU solver offering [orders of magnitude speed-up, and energy savings](https://www.ansys.com/blog/unleashing-the-full-power-of-gpus-for-ansys-fluent) over classical CPU-based HPC in the context of computational fluid dynamics (CFD) simulations. I serve on the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Non-Deterministic Approaches (Full Member) and Multidisciplinary Design Optimization (Friend Member).
 
-```mermaid
-flowchart TD
-    A[Philosophy] --> B(Mathematics) 
-    B --- C[Physics] & D[Computing]
-    E[Computational Aerosciences]
-    C --- E
-    D --- E
-```
+![](..//files/images/philosophy.png)
 
 ## Passion
 
