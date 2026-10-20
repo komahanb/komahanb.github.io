@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Engineer at Synopsys (Ansys), working on the Fluent GPU solver. I serve as a Full Member of the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Multidisciplinary Design Optimization (MDO) and Uncertainty Quantification (UQ, formerly Non-Deterministic Approaches, NDA).
+I am a Research Engineer at Synopsys (Ansys), working on the Fluent GPU solver. I serve on the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Multidisciplinary Design Optimization (MDO) and Uncertainty Quantification (UQ, formerly Non-Deterministic Approaches, NDA).
 
 My ambition is to develop scalable and robust computational infrastructure through foundational research spanning across physics, mathematics and computing for applications at the intersection of **Multidisciplinary Optimization Under Uncertainty (MDOUU)** and **Artificial Intelligence (AI)**.
 
