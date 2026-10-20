@@ -21,12 +21,12 @@ repository               : "komahanb/komahanb.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "../files/images/komahan-headshot.jpeg"
+  avatar           : "../files/images/komahan-headshot.png"
   name             : "Komahan Boopathy"
   pronouns         : # example: "she/her"  
   bio              : "Computational Aerosciences for Optimization Under Uncertainty"
   location         : "United States of America"
-  employer         : "Ansys Inc."
+  employer         : "Synopsys (Ansys Inc)"
   uri              : https://ansys.com
   email            : "KomahanBoopathy@ansys.com" 
 

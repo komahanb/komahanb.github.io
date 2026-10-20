@@ -5,7 +5,7 @@ Name Name:
   uri         : "https://komahanb.github.io"
   email       : "KomahanBoopathy@ansys.com"
   bio         : "This is the first name."
-  avatar      : "komahan-headshot.jpeg"
+  avatar      : "../files/images/komahan-headshot.png"
   twitter     : ""
   google_plus : ""
 
