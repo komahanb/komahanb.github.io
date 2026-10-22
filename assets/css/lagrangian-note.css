@@ -1,0 +1,47 @@
+/* Figures belonging to the Lagrangian project note. */
+.page__content .lagrangian-figure {
+  display: block;
+  margin: 2em 0;
+}
+
+.lagrangian-figure > a,
+.lagrangian-figure picture {
+  display: block;
+}
+
+.lagrangian-figure figcaption {
+  color: #52606b;
+  font-family: inherit;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.lagrangian-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 16px;
+}
+
+.lagrangian-panel {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.lagrangian-panel img {
+  max-width: none;
+  height: auto;
+  margin: 0;
+}
+
+.lagrangian-panels--pinning img {
+  width: 200%;
+}
+
+.lagrangian-panels--pst img {
+  width: 300%;
+}
+
+#variational-recurrence img {
+  max-width: 600px;
+}

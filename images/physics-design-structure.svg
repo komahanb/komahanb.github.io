@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="560" viewBox="0 0 600 560" role="img" aria-labelledby="title desc">
+  <title id="title">The same variational construction at successive levels</title>
+  <desc id="desc">At each level, fields, a metric, and paired laws form a Lagrangian whose stationarity determines the response. The first level's stationary equations become laws in the next level, where the construction repeats.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#247d8b"/></marker>
+  </defs>
+  <rect x="1" y="1" width="598" height="558" rx="16" fill="#f6f8fa" stroke="#dce3e8"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="300" y="44" font-size="25" font-weight="700" fill="#18384c">One construction, successive levels</text>
+    <rect x="25" y="74" width="550" height="166" rx="12" fill="#18384c"/>
+    <text x="300" y="109" font-size="21" fill="#c4e3e8">ONE VARIATIONAL PROBLEM</text>
+    <text x="300" y="153" font-size="25" fill="#ffffff">Fields · metric · paired laws</text>
+    <text x="300" y="202" font-size="27" font-weight="700" fill="#ffffff">Lagrangian → stationarity</text>
+    <path d="M300 242 V267 M300 312 V340" fill="none" stroke="#247d8b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="300" y="294" font-size="24" font-weight="700" fill="#247d8b">These equations become laws</text>
+    <rect x="25" y="353" width="550" height="166" rx="12" fill="#e6f0f2" stroke="#247d8b" stroke-width="1.5"/>
+    <text x="300" y="388" font-size="21" fill="#247d8b">THE NEXT VARIATIONAL PROBLEM</text>
+    <text x="300" y="432" font-size="25" fill="#18384c">Fields · metric · paired laws</text>
+    <text x="300" y="481" font-size="27" font-weight="700" fill="#18384c">Lagrangian → stationarity</text>
+  </g>
+</svg>
