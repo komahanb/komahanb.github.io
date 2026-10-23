@@ -1,4 +1,4 @@
-"""Redraw Figures 1 and 2 of Komahan's Sensitivity Method Hierarchy.
+"""Redraw Figures 1 and 2 of Engineering a Lagrangian.
 
 Continuous notation matches the website note. Figure 2 retains all response
 laws in R, including representation and initial conditions. One shared graph
@@ -59,9 +59,9 @@ def save(name,w,h,title,desc,body):
 laws=[
     (sub('r','s')+' = s − '+sub('s','0'),'design pin · point',sub('λ','s')),
     (sub('r','Ω')+'[Q,s]','physical law · I',sub('λ','Ω')),
-    (sub('r','t')+'[Q]','coordinate relations · I',sub('λ','t')),
+    (sub('r','t')+'[Q]','derivative relations · I',sub('λ','t')),
     (sub('r','ic')+'[Q]','initial data · {0}',sub('λ','ic')),
-    ('J[Q,s]','scalar metric','1'),
+    ('J[Q,s]','objective','1'),
 ]
 
 # Figure 1: source graph, laid out for a wide reading column.
@@ -76,16 +76,16 @@ for i,y in enumerate(ys):
     b.append(line(f'M736 {y+32} L848 296'))
 b.append(line('M110 219 V554 H262 L290 514',GOLD,dashed=True))
 b.append(label(480,558,'direct design dependence, when present',14,GOLD))
-b.extend([box(20,135,180,84,'#eef5f6',TEAL),label(110,167,'s = ν',25,weight='bold'),label(110,197,'design parameter',16),box(20,339,180,84,'#eef5f6',TEAL),label(110,371,'Q = (u, v, a)',23,weight='bold'),label(110,401,'state fields on I',16)])
+b.extend([box(20,135,180,84,'#eef5f6',TEAL),label(110,167,'s = ν',25,weight='bold'),label(110,197,'design parameter',16),box(20,339,180,84,'#eef5f6',TEAL),label(110,371,'Q = (u, v, a)',23,weight='bold'),label(110,401,'response fields on I',16)])
 for (name,meaning,mult),y in zip(laws,ys):
     b.extend([box(290,y,310,64,LIGHT),label(445,y+27,name,23,weight='bold'),label(445,y+51,meaning,16)])
     b.append(f'<circle cx="705" cy="{y+32}" r="30" fill="#eef5f6" stroke="{TEAL}" stroke-width="1.5"/>')
     b.append(label(705,y+39,mult,24))
 b.extend([box(848,247,136,100,NAVY),label(916,291,'ℒ',38,'white'),label(916,321,'one scalar',16,'white'),label(500,592,'Each law is paired on its own domain; J enters with coefficient 1.',17,TEAL)])
-save('figure-1-lagrangian-graph',1000,610,'Figure 1. Fields and paired laws form one Lagrangian','The design s feeds its pin and the physical law. The state Q feeds the physical law, coordinate relations, initial conditions and metric. Each residual is paired with its own multiplier on its own domain. These terms and J sum to one scalar. A dashed edge denotes optional direct dependence of J on s.',b)
+save('figure-1-lagrangian-graph',1000,610,'Figure 1. Fields and paired laws form one Lagrangian','The design s feeds its pin and the physical law. The response fields Q feed the physical law, derivative relations, initial conditions and objective. Each residual is paired with its own multiplier on its own domain. These terms and J sum to one scalar. A dashed edge denotes optional direct dependence of J on s.',b)
 
 # The same dependency graph, using two input buses for narrow screens.
-b=[label(240,32,'Fields and paired laws',25,NAVY,'bold'),box(60,57,155,64,'#eef5f6',TEAL),box(265,57,155,64,'#eef5f6',TEAL),label(137,85,'s = ν',23,weight='bold'),label(137,109,'design',17),label(342,85,'Q = (u, v, a)',19,weight='bold'),label(342,109,'state fields on I',16)]
+b=[label(240,32,'Fields and paired laws',25,NAVY,'bold'),box(60,57,155,64,'#eef5f6',TEAL),box(265,57,155,64,'#eef5f6',TEAL),label(137,85,'s = ν',23,weight='bold'),label(137,109,'design',17),label(342,85,'Q = (u, v, a)',19,weight='bold'),label(342,109,'response fields on I',15)]
 b.append(line('M137 121 V142 H24 V811',NAVY,arrow=False))
 b.append(line('M342 121 V158 H46 V828',TEAL,arrow=False))
 ys=[185,325,465,605,745]
@@ -100,7 +100,7 @@ for i,y in enumerate(ys):
     b.append(f'<circle cx="384" cy="{y+38}" r="30" fill="#eef5f6" stroke="{TEAL}" stroke-width="1.5"/>')
     b.append(label(384,y+46,mult,24))
 b.extend([box(126,867,228,76,NAVY),label(240,900,'ℒ',32,'white'),label(240,928,'one scalar',19,'white'),label(240,976,'Each law is paired on its own domain.',18,TEAL),label(240,1003,'Gold dashed edge: J may read s directly.',16,GOLD)])
-save('figure-1-lagrangian-graph-mobile',480,1030,'Figure 1. Fields and paired laws form one Lagrangian','The same graph as the wide figure, arranged vertically. Two input lines carry the single design and state to the laws that depend on them; these lines do not create copies of the fields.',b)
+save('figure-1-lagrangian-graph-mobile',480,1030,'Figure 1. Fields and paired laws form one Lagrangian','The same graph as the wide figure, arranged vertically. Two input lines carry the design and response fields to the laws that depend on them.',b)
 
 # Figure 2: one topology, four choices of variation.
 nodes={
@@ -125,10 +125,10 @@ edges={
  'lamsL':('lams','L','M340 292 L412 208'),
 }
 variants=[
- ('response','Response','Vary the law multipliers','lam',TEAL,{'Q','s','R','lam','L'},{'QR','sR','Rlam','lamL'},sub('D','λ')+'ℒ = R = 0','Determine the response Q'),
- ('adjoint','Adjoint','Vary the state fields','Q',GOLD,{'Q','J','R','lam','L'},{'QJ','QR','JL','Rlam','lamL'},sub('D','Q')+'ℒ = 0','Determine the multipliers λ'),
- ('sensitivity','Sensitivity','Vary the pinned design','s',TEAL,{'s','R','pin','lam','lams','L'},{'sR','spin','Rlam','lamL','pinlams','lamsL'},sub('D','s')+'ℒ = Dj + '+sub('λ','s')+' = 0','Read '+sub('λ','s')+' = −Dj'),
- ('design','Design','Vary the free design','s',GOLD,{'s','R','lam','L'},{'sR','Rlam','lamL'},sub('D','s')+'ℒ = Dj = 0','Determine a stationary design'),
+ ('response','Response','Vary the law multipliers','lam',TEAL,{'Q','s','R','lam','L'},{'QR','sR','Rlam','lamL'},'δℒ/δλ = R = 0','Determine the response Q'),
+ ('adjoint','Adjoint','Vary the response fields','Q',GOLD,{'Q','J','R','lam','L'},{'QJ','QR','JL','Rlam','lamL'},'δℒ/δQ = 0','Determine the multipliers λ'),
+ ('sensitivity','Sensitivity','Vary the pinned design','s',TEAL,{'s','R','pin','lam','lams','L'},{'sR','spin','Rlam','lamL','pinlams','lamsL'},'∂ℒ/∂s = dJ/ds + '+sub('λ','s')+' = 0','Read '+sub('λ','s')+' = −dJ/ds'),
+ ('design','Design','Vary the free design','s',GOLD,{'s','R','lam','L'},{'sR','Rlam','lamL'},'∂ℒ/∂s = dJ/ds = 0','Determine a stationary design'),
 ]
 for slug,title,subtitle,seed,color,active_nodes,active_edges,eq,outcome in variants:
     b=[box(1,1,478,438,'#ffffff','#c9d2d7',14),label(240,34,title,28,color,'bold'),label(240,61,subtitle,18)]
