@@ -24,8 +24,6 @@ In short, my philosophy is in the same spirit as Euler-Lagrange equations: deriv
 
 Yet another of Euler's masterpieces is Graph Theory. I have no doubt that the conceived computational infrastructure will look visually like a ``Network of Graphs`` (in abstraction) or like a ``Network of Lagrangians`` that are tuned (in concretion). The evidence is also in plain sight: Neural Networks that form the foundation of AI are nothing but a Network of Graphs!
 
-I develop these ideas through the physics examples in [Engineering a Lagrangian for Physics, Sensitivity, and Design](/projects/common-mathematics-physics-design/).
-
 ## Passion
 
 My passion lies in crafting simulation frameworks that mathematically model and computationally analyze the equilibrium of aerospace vehicle components with their environmental surroundings and operational conditions. My motivation is to provide computational infrastructure for their design improvements through access to the statistics of quantities of interest and their corresponding sensitivities to design choices. Thus, I undertake, as well as take part in, the development of scalable, flexible and robust computational frameworks -- for scientific computing and targeted applications in aerospace vehicle design contexts such as fixed-wing aircraft, rotorcraft and space system robotic arms.
