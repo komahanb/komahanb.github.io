@@ -25,6 +25,17 @@ I see **Genichi Taguchi**'s robust design as an engineering-centric application 
 
 What is that one object that combines an objective and constraints and is itself subject to conditions of stationarity for a purpose? Obviously, it is the Lagrangian (due to **J. L. Lagrange** for his work on Analytical Mechanics). He brilliantly ``engineered a scalar`` whose derivatives, when equated to zero, yielded the physics. I understand, recognize, formalize and extend the Lagrangian school of thought to hypothesize that, in addition to physics, sensitivity analysis and design optimizations are derivable from stationarities of Lagrangians, as are the innermost linear solvers, which are essentially `MINRES Operations`.
 
+<div style="display: flex; justify-content: center; align-items: flex-end; gap: 32px; flex-wrap: wrap; margin: 1em 0;">
+<figure style="text-align: center; margin: 0;">
+<img src="../files/images/leonhard-euler.jpg" alt="Leonhard Euler" style="height: 240px; width: auto;">
+<figcaption style="font-size: 0.9em;"><b>Leonhard Euler [1707 — 1783]</b><br>Portrait by J. E. Handmann, 1753</figcaption>
+</figure>
+<figure style="text-align: center; margin: 0;">
+<img src="../files/images/joseph-louis-lagrange.jpg" alt="Joseph-Louis Lagrange" style="height: 240px; width: auto;">
+<figcaption style="font-size: 0.9em;"><b>Joseph-Louis Lagrange [1736 — 1813]</b><br>Engraving, artist unknown</figcaption>
+</figure>
+</div>
+
 In short, my philosophy is in the same spirit as Euler-Lagrange equations: derive everything based on Lagrangians, so that the computational infrastructure is merely hierarchical Minimization of Residuals (mathematically) or Stationarity of Lagrangians (physically).
 
 Yet another of Euler's masterpieces is Graph Theory. I have no doubt that the conceived computational infrastructure will look visually like a ``Network of Graphs`` (in abstraction) or like a ``Network of Lagrangians`` that are tuned (in concretion). The evidence is also in plain sight: Neural Networks that form the foundation of AI are nothing but a Network of Graphs!
