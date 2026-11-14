@@ -10,8 +10,18 @@ redirect_from:
 
 I am a Senior R&D Engineer at Synopsys (Ansys), working on the Fluent GPU solver. I serve on the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Multidisciplinary Design Optimization (MDO) and Uncertainty Quantification (UQ, formerly Non-Deterministic Approaches, NDA).
 
+---
+
+<div class="band" style="background-color: #f0f0f0; padding: 20px;" markdown="1">
+
 ## Research Objective
 To enable engineers to design cost-effective aerospace systems that are robust and reliable, I undertake the development of simulation infrastructure that manages the connectivity between mathematics and physics, to enact **multidisciplinary physics-constrained optimization under uncertainty** methods that guard the design against stochastic variability introduced by manufacture, operation and environment. The design's optimality in terms of size, shape, topology, trajectory and control offers robustness to the aerospace industry and reliability to certification authorities across aircraft, rotorcraft and space systems.
+
+</div>
+
+---
+
+<div class="band" style="background-color: lightyellow; padding: 20px;" markdown="1">
 
 ## Philosophy: Eulerian Minimization of Lagrangian Scalars
 My ambition is to develop scalable and robust computational infrastructure through foundational research spanning across physics, mathematics and computing for applications at the intersection of **Multidisciplinary Optimization Under Uncertainty (MDOUU)** and **Artificial Intelligence (AI)**.
@@ -34,14 +44,15 @@ What is that one object that combines an objective and constraints and is itself
 
 </div>
 
-<div style="display: flex; justify-content: center; align-items: flex-end; gap: 32px; flex-wrap: wrap; margin: 1em 0;">
-<figure style="text-align: center; margin: 0;">
-<img src="../files/images/leonhard-euler.jpg" alt="Leonhard Euler" style="height: 240px; width: auto;">
-<figcaption style="font-size: 0.9em;"><b>Leonhard Euler [1707 — 1783]</b><br>Portrait by J. E. Handmann, 1753</figcaption>
+<!-- Side by side at equal heights on every screen: each portrait's share of the row is its width-to-height ratio (387/500 and 357/400). -->
+<div style="display: flex; flex-wrap: nowrap; justify-content: center; align-items: flex-start; gap: 24px; max-width: 424px; margin: 1.5em auto;">
+<figure style="display: block; flex: 774 1 0; min-width: 0; margin: 0; text-align: center;">
+<img src="../files/images/leonhard-euler.jpg" alt="Leonhard Euler" style="display: block; width: 100%; height: auto; margin: 0 0 0.5em;">
+<figcaption style="font-size: 0.9em;"><b>Leonhard Euler <span style="white-space: nowrap;">[1707 — 1783]</span></b><br>Portrait by J. E. Handmann, 1753</figcaption>
 </figure>
-<figure style="text-align: center; margin: 0;">
-<img src="../files/images/joseph-louis-lagrange.jpg" alt="Joseph-Louis Lagrange" style="height: 240px; width: auto;">
-<figcaption style="font-size: 0.9em;"><b>Joseph-Louis Lagrange [1736 — 1813]</b><br>Engraving, artist unknown</figcaption>
+<figure style="display: block; flex: 893 1 0; min-width: 0; margin: 0; text-align: center;">
+<img src="../files/images/joseph-louis-lagrange.jpg" alt="Joseph-Louis Lagrange" style="display: block; width: 100%; height: auto; margin: 0 0 0.5em;">
+<figcaption style="font-size: 0.9em;"><b>Joseph-Louis Lagrange <span style="white-space: nowrap;">[1736 — 1813]</span></b><br>Engraving, artist unknown</figcaption>
 </figure>
 </div>
 
@@ -57,7 +68,13 @@ Yet another of Euler's masterpieces is Graph Theory. I have no doubt that the co
 
 </div>
 
+</div>
+
 <div class="lens-block" data-lens="engineer computational-scientist" markdown="1">
+
+---
+
+<div class="band" style="background-color: #f0f0f0; padding: 20px;" markdown="1">
 
 ## Passion
 
@@ -71,11 +88,15 @@ My passion lies in crafting simulation frameworks that mathematically model and 
 
 </div>
 
-<b>
+</div>
 
-<div class="lens-block" data-lens="engineer physicist computational-scientist" markdown="1">
+---
+
+<div class="band" style="background-color: lightyellow; padding: 20px;" markdown="1">
 
 ## Graduate Research
+
+<div class="lens-block" data-lens="engineer physicist computational-scientist" markdown="1">
 
 I hold a Ph.D. in Aerospace Engineering from the Georgia Institute of Technology, where I conducted research as an assistant in the [SMDO laboratory](https://gkennedy.gatech.edu/) led by [Prof. Graeme Kennedy](https://scholar.google.com/citations?user=LHqGhxkAAAAJ&hl=en).
 
@@ -126,8 +147,14 @@ For more detailed information, the theses and associated presentations shall be 
 {% endfor %}
 </div>
 
-<b>
+</div>
+
+---
+
+<div class="band" style="background-color: #f0f0f0; padding: 20px;" markdown="1">
 
 # [Curriculum Vitae](/files/KomahanBoopathyCV.pdf)
 
 <iframe src="../files/KomahanBoopathyCV.pdf#navpanes=0&pagemode=none" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
+
+</div>

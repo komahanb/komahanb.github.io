@@ -10,6 +10,8 @@
     engineer, physicist, mathematician, computational-scientist.
   - Untagged content is common to every lens. "All" shows everything.
   - Tag so that no lens shows a sentence whose reference it hides.
+  - A band hidden by a lens goes inside the lens block together with the
+    rule (---) above it. The script re-alternates the visible bands.
 
   The choice is remembered only in the visitor's own browser, and it can be
   shared as a link, for example ?lens=physicist. Without JavaScript the bar
@@ -51,11 +53,30 @@
       var tags = (blocks[i].getAttribute('data-lens') || '').split(/\s+/);
       blocks[i].hidden = lens !== 'all' && tags.indexOf(lens) < 0;
     }
+    recolor();
     var buttons = document.querySelectorAll('[data-lens-choice]');
     for (var j = 0; j < buttons.length; j++) {
       buttons[j].setAttribute('aria-pressed', String(buttons[j].getAttribute('data-lens-choice') === lens));
     }
     return lens;
+  }
+
+  /* Coloured bands (class "band") alternate down the page. When a lens hides
+     a band, the visible bands take the full page's colour sequence in order,
+     so that two bands of one colour never meet. */
+  function recolor() {
+    var bands = document.querySelectorAll('.band');
+    var colors = [];
+    for (var i = 0; i < bands.length; i++) {
+      if (!bands[i].hasAttribute('data-band-color')) {
+        bands[i].setAttribute('data-band-color', bands[i].style.backgroundColor);
+      }
+      colors.push(bands[i].getAttribute('data-band-color'));
+    }
+    var k = 0;
+    for (var j = 0; j < bands.length; j++) {
+      if (!bands[j].closest('[hidden]')) { bands[j].style.backgroundColor = colors[k++]; }
+    }
   }
 
   function start() {
