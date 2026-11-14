@@ -7,7 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Engineer at Synopsys (Ansys), working on the Fluent GPU solver. I serve on the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Multidisciplinary Design Optimization (MDO) and Uncertainty Quantification (UQ, formerly Non-Deterministic Approaches, NDA).
+I am a Senior R&D Engineer at Synopsys (Ansys), working on the Fluent GPU solver. I serve on the [AIAA Technical Committees](https://aiaa.org/get-involved/committees-groups/technical-committees/) for Multidisciplinary Design Optimization (MDO) and Uncertainty Quantification (UQ, formerly Non-Deterministic Approaches, NDA).
+
+## Research Objective
+To enable engineers to design cost-effective aerospace systems that are robust and reliable, I undertake the development of simulation infrastructure that manages the connectivity between mathematics and physics, to enact **multidisciplinary physics-constrained optimization under uncertainty** methods that guard the design against stochastic variability introduced by manufacture, operation and environment. The design's optimality in terms of size, shape, topology, trajectory and control offers robustness to the aerospace industry and reliability to certification authorities across aircraft, rotorcraft and space systems.
 
 ## Philosophy: Eulerian Minimization of Lagrangian Scalars
 My ambition is to develop scalable and robust computational infrastructure through foundational research spanning across physics, mathematics and computing for applications at the intersection of **Multidisciplinary Optimization Under Uncertainty (MDOUU)** and **Artificial Intelligence (AI)**.
@@ -16,7 +19,9 @@ My ambition is to develop scalable and robust computational infrastructure throu
 
 In contemporary scientific understanding, both MDOUU and AI are broad and distinctive disciplinary areas, but they share a common philosophical trait, and that's what excites me more than anything! They are both optimization statements that minimize an Objective subject to some Constraints.
 
-This is what **Leonard Euler** wrote: *"....nothing at all takes place in the Universe in which a rule of maximum or minimum does not arise"*, and I recognize that these are instantiations of the Eulerian school of thought. Therefore, one computational infrastructure should be able to support both MDOUU and AI (if one were to place their trust in Euler's intuitions :D). From my standpoint, MDOUU and AI are actually Optimization Under Uncertainty (OUU) statements involving the Expectation and Variance of metrics (e.g., minimize an expected loss and its variance, not mere loss!).
+This is what **Leonhard Euler** wrote in 1744: *"...nothing at all takes place in the universe in which some rule of maximum or minimum does not appear"*, and I recognize that these are instantiations of the Eulerian school of thought. Therefore, one computational infrastructure should be able to support both MDOUU and AI (if one were to place their trust in Euler's intuitions :D). From my standpoint, MDOUU and AI are actually Optimization Under Uncertainty (OUU) statements involving the Expectation and Variance of metrics (e.g., minimize an expected loss and its variance, not mere loss!).
+
+I see **Genichi Taguchi**'s robust design as an engineering-centric application of this Eulerian school of thought, which my work on [optimization under uncertainty]({{site.baseurl}}/computational-infrastructure/) puts into practice for aerospace systems.
 
 What is that one object that combines an objective and constraints and is itself subject to conditions of stationarity for a purpose? Obviously, it is the Lagrangian (due to **J. L. Lagrange** for his work on Analytical Mechanics). He brilliantly ``engineered a scalar`` whose derivatives, when equated to zero, yielded the physics. I understand, recognize, formalize and extend the Lagrangian school of thought to hypothesize that, in addition to physics, sensitivity analysis and design optimizations are derivable from stationarities of Lagrangians, as are the innermost linear solvers, which are essentially `MINRES Operations`.
 
@@ -89,4 +94,4 @@ For more detailed information, the theses and associated presentations shall be 
 
 # [Curriculum Vitae](/files/KomahanBoopathyCV.pdf)
 
-<iframe src="../files/KomahanBoopathyCV.pdf" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
+<iframe src="../files/KomahanBoopathyCV.pdf#navpanes=0&pagemode=none" width="100%" height="500"  frameborder="yes" border="10" marginwidth="10"  marginheight="10"></iframe>
