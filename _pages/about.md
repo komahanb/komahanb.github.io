@@ -2,6 +2,7 @@
 title: "About Me"
 permalink: /
 author_profile: true
+lens: true
 redirect_from: 
   - /about
   - /about.html
@@ -21,9 +22,17 @@ In contemporary scientific understanding, both MDOUU and AI are broad and distin
 
 This is what **Leonhard Euler** wrote in 1744: *"...nothing at all takes place in the universe in which some rule of maximum or minimum does not appear"*, and I recognize that these are instantiations of the Eulerian school of thought. Therefore, one computational infrastructure should be able to support both MDOUU and AI (if one were to place their trust in Euler's intuitions :D). From my standpoint, MDOUU and AI are actually Optimization Under Uncertainty (OUU) statements involving the Expectation and Variance of metrics (e.g., minimize an expected loss and its variance, not mere loss!).
 
+<div class="lens-block" data-lens="engineer" markdown="1">
+
 I see **Genichi Taguchi**'s robust design as an engineering-centric application of this Eulerian school of thought, which my work on [optimization under uncertainty]({{site.baseurl}}/computational-infrastructure/) puts into practice for aerospace systems.
 
+</div>
+
+<div class="lens-block" data-lens="physicist mathematician computational-scientist" markdown="1">
+
 What is that one object that combines an objective and constraints and is itself subject to conditions of stationarity for a purpose? Obviously, it is the Lagrangian (due to **J. L. Lagrange** for his work on Analytical Mechanics). He brilliantly ``engineered a scalar`` whose derivatives, when equated to zero, yielded the physics. I understand, recognize, formalize and extend the Lagrangian school of thought to hypothesize that, in addition to physics, sensitivity analysis and design optimizations are derivable from stationarities of Lagrangians, as are the innermost linear solvers, which are essentially `MINRES Operations`.
+
+</div>
 
 <div style="display: flex; justify-content: center; align-items: flex-end; gap: 32px; flex-wrap: wrap; margin: 1em 0;">
 <figure style="text-align: center; margin: 0;">
@@ -36,9 +45,19 @@ What is that one object that combines an objective and constraints and is itself
 </figure>
 </div>
 
+<div class="lens-block" data-lens="physicist mathematician computational-scientist" markdown="1">
+
 In short, my philosophy is in the same spirit as Euler-Lagrange equations: derive everything based on Lagrangians, so that the computational infrastructure is merely hierarchical Minimization of Residuals (mathematically) or Stationarity of Lagrangians (physically).
 
+</div>
+
+<div class="lens-block" data-lens="mathematician computational-scientist" markdown="1">
+
 Yet another of Euler's masterpieces is Graph Theory. I have no doubt that the conceived computational infrastructure will look visually like a ``Network of Graphs`` (in abstraction) or like a ``Network of Lagrangians`` that are tuned (in concretion). The evidence is also in plain sight: Neural Networks that form the foundation of AI are nothing but a Network of Graphs!
+
+</div>
+
+<div class="lens-block" data-lens="engineer computational-scientist" markdown="1">
 
 ## Passion
 
@@ -50,7 +69,11 @@ My passion lies in crafting simulation frameworks that mathematically model and 
 | :--------------------------: | :---------------------------: | :-----------------------------: |
 |       Aircraft Design        |       Rotorcraft Design       |      Space Systems Design       |
 
+</div>
+
 <b>
+
+<div class="lens-block" data-lens="engineer physicist computational-scientist" markdown="1">
 
 ## Graduate Research
 
@@ -74,6 +97,8 @@ I hold a Ph.D. in Aerospace Engineering from the Georgia Institute of Technology
 I also hold a Master's degree in Aerospace Engineering from the University of Dayton, where I worked as a research assistant in [Prof. Markus Rumpfkeil's](https://scholar.google.com/citations?user=zCRdVjYAAAAJ&hl=en) CFD laboratory.
 
 -  I focused on the development of applied methods for aerodynamic shape optimization under uncertainty using surrogate models, as well as  mathematical techniques in abstraction for multi-surrogate-based error-estimation and training-point-selection -- utilizing higher-order derivatives and variable-fidelity training data.
+
+</div>
 
 For more detailed information, the theses and associated presentations shall be accessed below:
 
