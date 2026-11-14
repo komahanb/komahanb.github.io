@@ -40,7 +40,10 @@
   function stored() { try { return window.localStorage.getItem(KEY); } catch (e) { return null; } }
   function store(value) { try { window.localStorage.setItem(KEY, value); } catch (e) {} }
 
-  // Show the blocks tagged with the chosen lens, hide the others, mark the button.
+  /* Block comments only: the compress layout joins the page into one line,
+     so a line comment would swallow the rest of the script. */
+
+  /* Show the blocks tagged with the chosen lens, hide the others, mark the button. */
   function apply(lens) {
     if (LENSES.indexOf(lens) < 0) { lens = 'all'; }
     var blocks = document.querySelectorAll('.lens-block');
@@ -59,7 +62,7 @@
     var bar = document.querySelector('.lens-bar');
     if (!bar) { return; }
     var url = new URL(window.location.href);
-    // A shared link wins over the remembered choice, without overwriting it.
+    /* A shared link wins over the remembered choice, without overwriting it. */
     apply(url.searchParams.get(KEY) || stored() || 'all');
     bar.hidden = false;
     bar.addEventListener('click', function (event) {
