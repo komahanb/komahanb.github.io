@@ -14,7 +14,10 @@ I am a Senior R&D Engineer at Synopsys (Ansys), working on the Fluent GPU solver
 <div class="band" style="background-color: #f0f0f0; padding: 20px;" markdown="1">
 
 ## Research Objective
-To enable engineers to design cost-effective aerospace systems that are robust and reliable, I undertake the development of simulation infrastructure that manages the connectivity between mathematics and physics, to enact **multidisciplinary physics-constrained optimization under uncertainty** methods that guard the design against stochastic variability introduced by manufacture, operation and environment. The design's optimality in terms of size, shape, topology, trajectory and control offers robustness to the aerospace industry and reliability to certification authorities across aircraft, rotorcraft and space systems.
+
+{::nomarkdown}
+{% include research-objective.html %}
+{:/}
 
 </div>
 
