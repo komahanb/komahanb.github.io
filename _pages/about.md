@@ -33,9 +33,11 @@ My passion lies in crafting simulation frameworks that mathematically model and 
 
 <!--  whether through perturbations of variables in a given design configuration, or permutations and combinations of various design configurations.  -->
 
-| ![](../images/fixedwing.png) | ![](../images/rotorcraft.png) | ![](../images/spaceshuttle.png) |
+| [![Aircraft design: an interactive conceptual design](../images/fixedwing.png)](https://claude.ai/artifact/TFwb3RCouBHupcufgPQzeE){:target="_blank" rel="noopener"} | ![](../images/rotorcraft.png) | ![](../images/spaceshuttle.png) |
 | :--------------------------: | :---------------------------: | :-----------------------------: |
-|       Aircraft Design        |       Rotorcraft Design       |      Space Systems Design       |
+| [Aircraft Design](https://claude.ai/artifact/TFwb3RCouBHupcufgPQzeE){:target="_blank" rel="noopener"} |       Rotorcraft Design       |      Space Systems Design       |
+
+**Aircraft design, phase by phase:** [Conceptual](https://claude.ai/artifact/TFwb3RCouBHupcufgPQzeE){:target="_blank" rel="noopener"}: shape an aircraft and fly it (interactive) &rarr; Preliminary: optimize the shape of a fixed configuration (in preparation) &rarr; Detail: optimize the topology of the structure (in preparation)
 
 </div>
 
