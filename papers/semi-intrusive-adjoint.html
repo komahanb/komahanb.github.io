@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Semi-Intrusive Uncertainty Propagation and Adjoint Sensitivity Analysis Using the Stochastic Galerkin Method</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Komahan Boopathy: computational aerosciences for optimization under uncertainty.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/skin.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../index.html">Komahan Boopathy</a><nav class="nav" aria-label="Site"><a href="../index.html">Home</a><a href="../philosophy.html">Philosophy</a><a href="../research.html">Research</a><a href="../publications.html" aria-current="page">Publications</a><a href="../projects.html">Projects</a><a href="../cv.html">CV</a></nav></div></header>
+<main>
+
+<section class="page-hero"><div class="wrap paper-head">
+  <figure class="fig"><img src="../assets/img/2020-semi-intrusive-adjoint-cover.png" alt=""><figcaption>The applied conceptual framework for a probablistic sampling based stochastic Galerkin implementation.</figcaption></figure>
+  <div style="display:grid; gap:14px; min-width:0">
+    <p><a href="../publications.html">&larr; Publications</a> &nbsp; <span class="badge badge--conference">Conference paper</span> <span class="muted" style="font-family: var(--mono)">2020</span></p>
+    <h1 style="font-size: clamp(1.6rem, 3.2vw, 2.3rem)">Semi-Intrusive Uncertainty Propagation and Adjoint Sensitivity Analysis Using the Stochastic Galerkin Method</h1>
+    <p class="muted"><a href="https://www.aiaa.org/events-learning/event/2020/01/06/default-calendar/SciTech2020">22nd AIAA Non-Deterministic Approaches Conference, Orlando, Florida, Jan 2020</a></p>
+    <div class="btns"><a class="btn" href="https://arc.aiaa.org/doi/10.2514/6.2020-1146" target="_blank" rel="noopener">Publisher (DOI)</a><a class="btn btn--quiet" href="https://komahanb.github.io/files/2020-semi-intrusive-adjoint-paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a></div>
+  </div>
+</div></section>
+<section class="band band--a"><div class="wrap"><div class="paper-body prose" style="max-width: 820px"><p>Stochastic Galerkin projection techniques provide an efficient method to propagate uncertainties through simulations governed by differential equations. However, stochastic Galerkin methods are often challenging to implement within existing deterministic finite-element libraries and may require extensive source code modifications. In this work, we present a semi-intrusive stochastic Galerkin methodology that fully reuses existing deterministic finite-element implementations to perform projection in the probabilistic domain. Furthermore, the proposed semi-intrusive technique enables the use of deterministic derivatives for the adjoint method, yielding a stochastic Galerkin adjoint without further implementation effort. The principal idea is to project the deterministic element residuals, Jacobians, boundary conditions, and adjoint terms on to the probabilistic space prior to assembly of the stochastic finite element system, assuming the deterministic implementations to be black-box. The deterministic implementations must support the ability to update random parameters to enable quadrature in the stochastic space. The proposed semi-intrusive stochastic Galerkin approach is demonstrated using TACS, a finite-element framework with a adjoint-based gradient evaluation methods. The capabilities are demonstrated on several test problems including a flexible multibody dynamics simulation of a four bar mechanism.</p></div></div></section>
+<section class="band band--b"><div class="wrap"><nav class="pager" aria-label="More papers"><a href="phd-thesis.html"><small>Newer</small>Adjoint Based Design Optimization of Systems with Time Dependent Physics and Probabilistically Modeled Uncertainties</a><a href="rotorcraft-adjoint-optimization.html"><small>Older</small>Parallel Finite Element Framework for Rotorcraft Multibody Dynamics and Adjoint Sensitivities</a></nav></div></section>
+
+</main>
+<footer class="foot"><div class="wrap"><span>&copy; 2026 Komahan Boopathy</span><span><a href="https://scholar.google.com/citations?hl=en&amp;user=YLg4R3sAAAAJ" target="_blank" rel="noopener">Google Scholar</a> &middot; <a href="https://github.com/komahanb" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://youtube.com/@komahanboopathy" target="_blank" rel="noopener">YouTube</a></span></div></footer>
+</body>
+</html>

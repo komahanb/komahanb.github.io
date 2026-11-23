@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Building Aerodynamic Databases Using Enhanced Kriging Surrogate Models</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Komahan Boopathy: computational aerosciences for optimization under uncertainty.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/skin.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="../index.html">Komahan Boopathy</a><nav class="nav" aria-label="Site"><a href="../index.html">Home</a><a href="../philosophy.html">Philosophy</a><a href="../research.html">Research</a><a href="../publications.html" aria-current="page">Publications</a><a href="../projects.html">Projects</a><a href="../cv.html">CV</a></nav></div></header>
+<main>
+
+<section class="page-hero"><div class="wrap paper-head">
+  <figure class="fig"><img src="../assets/img/2013-chicago-kriging-cover.png" alt=""><figcaption>The Kriging surrogate model of the lift coefficient is built using high and low fidelity training points.</figcaption></figure>
+  <div style="display:grid; gap:14px; min-width:0">
+    <p><a href="../publications.html">&larr; Publications</a> &nbsp; <span class="badge badge--conference">Conference paper</span> <span class="muted" style="font-family: var(--mono)">2013</span></p>
+    <h1 style="font-size: clamp(1.6rem, 3.2vw, 2.3rem)">Building Aerodynamic Databases Using Enhanced Kriging Surrogate Models</h1>
+    <p class="muted">AIAA Region III Student Conference, Chicago, Illinois, April 2013</p>
+    <div class="btns"><a class="btn" href="https://komahanb.github.io/files/2013-chicago-kriging-paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a></div>
+  </div>
+</div></section>
+<section class="band band--a"><div class="wrap"><div class="paper-body prose" style="max-width: 820px"><p>Recently, we developed a variable-fidelity hybrid Kriging surrogate model1 that is enhanced by Multivariate Interpolation and Regression (MIR) and adaptive training point selection. We use MIR as a local surrogate model that guides the construction of the global Kriging surrogate. The adaptive training point strategy that we use adds training points at locations where the difference between local (MIR) and global (Kriging) surrogate predictions differ by a given threshold. The model is iteratively updated at these locations of greater uncertainty until convergence or a maximum number of evaluations has been reached. This approach helps us to monitor the progress of the surrogate model construction as well as eliminates unnecessary function evaluations in regions where the surrogate is already doing a good job approximating the exact function. In this paper, we demonstrate the use of our hybrid Kriging model for the construction of a two-dimensional aerodynamic database for a NACA 0012 airfoil in steady and inviscid transonic flow. We study the variations of its lift and drag coefficients for changes in Mach number (0.5 &lt; M &lt; 1.5) and angle of attack (0 &#9702; &lt; &#945; &lt; 5 &#9702; ). For the purpose of validation of our hybrid surrogate, an &#8220;exact&#8221; database is obtained through Euler flow solves on a Cartesian mesh of 51&#215;51 = 2601 equispaced nodes. The root mean square error (RMSE) between the exact and surrogate approximated coefficient values over the entire domain are calculated and used to compare the performances of ordinary Kriging approaches and our enhanced Kriging approach. We also investigate the use of variable-fidelity training points to build the surrogate even more efficiently.</p></div></div></section>
+<section class="band band--b"><div class="wrap"><nav class="pager" aria-label="More papers"><a href="kriging-mir-dynamic-paper.html"><small>Newer</small>A Multivariate Interpolation and Regression Enhanced Kriging Surrogate Model</a><span></span></nav></div></section>
+
+</main>
+<footer class="foot"><div class="wrap"><span>&copy; 2026 Komahan Boopathy</span><span><a href="https://scholar.google.com/citations?hl=en&amp;user=YLg4R3sAAAAJ" target="_blank" rel="noopener">Google Scholar</a> &middot; <a href="https://github.com/komahanb" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://youtube.com/@komahanboopathy" target="_blank" rel="noopener">YouTube</a></span></div></footer>
+</body>
+</html>
