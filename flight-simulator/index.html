@@ -291,6 +291,7 @@ html[data-skin="gatech"] .card { border-top: 3px solid #b3a369; }
 html[data-skin="gatech"] h1, html[data-skin="gatech"] h2, html[data-skin="gatech"] h3, html[data-skin="gatech"] .brand { font-family: "Roboto Slab", "IBM Plex Sans Condensed", Georgia, serif; }
 html[data-skin="gatech"] header.bar .chip { color: #cfc8a8; background: transparent; border-color: rgba(179, 163, 105, .35); }
 html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
+#chip-conn, #chip-run, .runbar, label[for="pick-id"], #pick-go { display: none !important; }
 </style>
 <script>{ let k = 'india'; try { k = JSON.parse(localStorage.getItem('flight-simulator:skin')) || 'india'; } catch (e) {} if (k === 'earth' || k === 'neon' || k === 'india' || k === 'gatech') document.documentElement.dataset.skin = k; if (k === 'gatech') document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap">'); }</script>
 
@@ -375,12 +376,12 @@ html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
 <section class="view" id="view-fly" aria-labelledby="tab-fly" hidden>
   <div>
     <h1>The flight</h1>
-    <p class="lede">The aircraft starts in trim. Before the flight, the program solves an optimization for the pitch, the constant elevator deflection and the thrust at which nothing accelerates (Guide, Part III). The thrust entered here is where that search begins. Each control then moves once, as a smooth pulse about the trim. These values and the geometry of Design together form the setup, and Run sends the setup to the machine through the Rotorcraft connector.</p>
+    <p class="lede">The aircraft starts in trim. Before the flight, the program solves an optimization for the pitch, the constant elevator deflection and the thrust at which nothing accelerates (Guide, Part III). The thrust entered here is where that search begins. Each control then moves once, as a smooth pulse about the trim. These values and the geometry of Design together form the setup.</p>
   </div>
   <div class="lesson-banner" data-lesson-banner hidden></div>
   <section aria-labelledby="lessons-h">
     <h2 id="lessons-h" style="margin:0 0 4px">Questions to explore</h2>
-    <p class="small" style="margin:0 0 10px">Each question sets up an experiment in one click. Run it, open Results, and read the lines marked Notice and Ask yourself.</p>
+    <p class="small" style="margin:0 0 10px">Each question sets up an experiment in one click, with the lines marked Notice and Ask yourself.</p>
     <div class="lessons" id="lessons"></div>
   </section>
   <div class="fly">
@@ -392,7 +393,7 @@ html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
     <button class="btn" id="run" disabled>Run the setup</button>
     <button class="btn quiet" id="stop" hidden>Stop</button>
     <progress id="run-bar" max="1" value="0" hidden></progress>
-    <p class="note" id="run-note">Looking for the Rotorcraft connector…</p>
+    <p class="note" id="run-note">Looking for the solver service…</p>
   </div>
 </section>
 
@@ -517,7 +518,7 @@ html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
       <p>At each Gauss point <span class="m" data-tex="u">u</span> along the span, a strip has its quarter-chord point <span class="m" data-tex="x(u,\tfrac14)">x</span>, chord vector <span class="m" data-tex="c=x(u,1)-x(u,0)">c</span>, span tangent <span class="m" data-tex="s=x_u">s</span> and normal <span class="m" data-tex="n=s\times c/|s\times c|">n</span>. It moves at <span class="m" data-tex="v=V+\omega\times(x-c_m)">v</span>; <span class="m" data-tex="v_p">v_p</span> is the part normal to the span, and</p>
       <div class="eqn"><div class="eq" data-tex="\sin\alpha=-\frac{v_p\cdot n}{|v_p|},\qquad c_l=a\,(\sin\alpha+\kappa_0+\tau\delta),\qquad a=\frac{a_0}{1+a_0/(\pi A)},"></div><span class="no">(4)</span></div>
       <div class="eqn"><div class="eq" data-tex="dF=\tfrac{\rho}{2}\,c\,|v_p|\Bigl(c_l\,v_p\times\frac{s}{|s|}-\Bigl(c_{d0}+\frac{c_l^2}{\pi e A}\Bigr)v_p\Bigr)\,|s|\,du."></div><span class="no">(5)</span></div>
-      <p>Here <span class="m" data-tex="\alpha">α</span> is the angle of attack of the strip, and <span class="m" data-tex="\kappa_0">κ₀</span> is the wing's lift offset: a number added to <span class="m" data-tex="\sin\alpha">sin α</span>, positive for a cambered section, and zero for the tailplane and the fin. It is the entry the program calls <code>zero_lift_angle</code>, but it is not that angle. With the control neutral the lift of a wing strip vanishes at <span class="m" data-tex="\alpha=-\arcsin\kappa_0">α = −asin κ₀</span>, which is −2.01° for the default 0.035. The program's name is kept in the connector and the value is sent unchanged. Only the page's label and symbol differ.</p>
+      <p>Here <span class="m" data-tex="\alpha">α</span> is the angle of attack of the strip, and <span class="m" data-tex="\kappa_0">κ₀</span> is the wing's lift offset: a number added to <span class="m" data-tex="\sin\alpha">sin α</span>, positive for a cambered section, and zero for the tailplane and the fin. It is the entry the program calls <code>zero_lift_angle</code>, but it is not that angle. With the control neutral the lift of a wing strip vanishes at <span class="m" data-tex="\alpha=-\arcsin\kappa_0">α = −asin κ₀</span>, which is −2.01° for the default 0.035. The program's name is kept and the value is sent unchanged. Only the page's label and symbol differ.</p>
       <p>Figure 4 shows one strip from its side: the angle of attack is the angle between the chord and the strip's own velocity, the lift is perpendicular to that velocity and the drag is along it.</p>
       <figure class="fig">
         <svg id="fig-section" role="img" aria-label="A strip seen from its side with its velocity, normal, lift and drag"></svg>
@@ -677,7 +678,7 @@ html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
     </div>
     <div class="card" id="guide-records">
       <h2>What the program records</h2>
-      <p>A result is the program's records, as the Rotorcraft connector returns them. Results shows nothing else as a solver result.</p>
+      <p>A result is the program's records, as the program returns them. Results shows nothing else as a solver result.</p>
       <div class="scroll"><table class="t left">
         <thead><tr><th>Record</th><th>Holds</th></tr></thead>
         <tbody>
@@ -697,10 +698,10 @@ html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
       <h2>Using the page</h2>
       <ol>
         <li><b>Design</b>: pick a patch and a projection. Drag an amber control point. With Mirror on, its partner on the other side follows. Type exact values in the fields under the drawing. The ledger on the right is a browser preview and updates as you drag.</li>
-        <li><b>Fly</b>: set the speed, the thrust and the pulses. Design and Fly together are the setup. Run is offered once every value of the setup passes the program's declaration, and it sends the setup to the machine.</li>
-        <li><b>Results</b>: one result with the setup saved with it, either the one recorded in this page or a flight run retrieved from the machine by its ID. The page says where the current setup differs from that result’s, and remembers the result you chose when the page is opened again in this browser.</li>
+        <li><b>Fly</b>: set the speed, the thrust and the pulses. Design and Fly together are the setup.</li>
+        <li><b>Results</b>: one result with the setup saved with it, the one recorded in this page. The page says where the current setup differs from that result’s, and remembers the result you chose when the page is opened again in this browser.</li>
       </ol>
-      <p class="small">The page reaches the machine through the Rotorcraft connector in claude.ai Settings → Connectors. Without it, Design, the Guide and the recorded result still work. A run of another application on the machine is neither shown nor stopped by this page.</p>
+      
     </div>
   </div>
     </div>
@@ -715,7 +716,7 @@ html[data-skin="gatech"] header.bar .chip b { color: #ffffff; }
 (function () {
 'use strict';
 const byId = id => document.getElementById(id);
-const SERVER = 'Rotorcraft', PROGRAM = 'flight';
+const SERVER = 'solver', PROGRAM = 'flight';
 const RECORDED_COMMIT = '709ceb1';
 let DECL = JSON.parse(byId('declaration').textContent);
 const RECORDED = JSON.parse(byId('recorded').textContent);
@@ -1591,7 +1592,7 @@ function renderProvenance() {
   const scheme = stepsMeaning.includes(' by ') ? stepsMeaning.slice(stepsMeaning.indexOf(' by ') + 4) : '';
   const facts = [];
   facts.push(factGroup('Origin'));
-  facts.push(fact('Source', live ? `<span class="badge solver">solver run</span> Retrieved from the machine through the Rotorcraft connector${r.retrievedAt ? ' at ' + esc(r.retrievedAt.toLocaleTimeString()) : ''}.`
+  facts.push(fact('Source', live ? `<span class="badge solver">solver run</span> Retrieved from the machine${r.retrievedAt ? ' at ' + esc(r.retrievedAt.toLocaleTimeString()) : ''}.`
     : '<span class="badge">recorded in the page</span> Stored in this page. Nothing was fetched from the machine.'));
   facts.push(fact('Run ID', live ? `<span class="num">${esc(r.id)}</span>` : 'None. The stored result has no run ID.'));
   facts.push(fact('Program', live ? `The application <span class="num">${esc(st.program)}</span>` + (r.setupProgram ? ' ran the program <span class="num">' + esc(r.setupProgram) + '</span>. Both names were checked before the run was shown.' : '. Its name was checked before the run was shown.')
@@ -1913,11 +1914,11 @@ function chip(id, cls, name, text) { byId(id).innerHTML = `<span class="dot ${cl
 function failure(e) {
   const code = e && e.code, block = e && e.result && Array.isArray(e.result.content) && e.result.content[0];
   const words = block && typeof block.text === 'string' ? block.text : (e && e.message) || '';
-  const reconnect = 'Reconnect ' + SERVER + ' in claude.ai Settings → Connectors, so that claude.ai reads the service’s tools again.';
+  const reconnect = 'Reconnect ' + SERVER + ' in the service settings, so that its tools are read again.';
   return ({
-    server_not_connected: 'Add a connector named ' + SERVER + ' in claude.ai Settings → Connectors, with the URL the service prints.',
-    server_not_found: 'The ' + SERVER + ' connector no longer exists. Add it again in claude.ai Settings → Connectors.',
-    needs_reauth: 'Reconnect ' + SERVER + ' in claude.ai Settings → Connectors.',
+    server_not_connected: 'Add a connector named ' + SERVER + ' in the service settings, with the URL the service prints.',
+    server_not_found: 'The ' + SERVER + ' connector no longer exists. Add it again in the service settings.',
+    needs_reauth: 'Reconnect ' + SERVER + ' in the service settings.',
     not_in_manifest: 'The ' + SERVER + ' connector is turned off for this page.',
     approval_required: 'This needs the approval of the ' + SERVER + ' connector. Try again to be offered it.',
     server_unavailable: 'The service does not respond. Start it, and its tunnel, on the machine.',
@@ -1927,8 +1928,8 @@ function failure(e) {
 // the note of Fly's run bar, from the state as it stands
 function flyNote(ps) {
   const going = machine && machine.state === 'running', flight = machine && machine.program === PROGRAM;
-  if (connState === 'checking') return 'Looking for the Rotorcraft connector…';
-  if (connState === 'none') return 'This view cannot reach the Rotorcraft connector. Design, the Guide and the recorded result still work.';
+  if (connState === 'checking') return 'Looking for the solver service…';
+  if (connState === 'none') return 'This view cannot reach the solver service. Design, the Guide and the recorded result still work.';
   if (connState === 'error') return connError;
   if (starting) return 'Sending the setup…';
   if (going && flight && mine === machine.id) {
@@ -1981,7 +1982,7 @@ async function watchMachine(id) {
 async function adopt(id, o = {}) {
   id = String(id == null ? '' : id).trim();
   const refuse = why => { pickNote(why); renderPick(); return false; };
-  if (!mcp) return refuse('Retrieving a run needs the Rotorcraft connector, which this view cannot reach.');
+  if (!mcp) return refuse('Retrieving a run needs the solver service, which this view cannot reach.');
   if (!RUN_ID.test(id)) return refuse('Type the ID of a flight run, as the service gave it: for example 20261122-171457-e2396e.');
   picking = true; renderPick(); pickNote(`Asking the service for run ${id}…`);
   try {
@@ -2373,7 +2374,7 @@ window.addEventListener('load', () => typeset(document));
   try { mcp = window.claude && typeof window.claude.use === 'function' ? await window.claude.use('mcp') : null; } catch (e) { mcp = null; }
   if (!mcp) {
     connState = 'none'; chip('chip-conn', '', 'Connector', 'unavailable');
-    if (wanted) pickNote(`The result you chose before, run ${wanted}, needs the Rotorcraft connector, which this view cannot reach. The result recorded in this page is shown in its place, and the choice is kept.`);
+    if (wanted) pickNote(`The result you chose before, run ${wanted}, needs the solver service, which this view cannot reach. The result recorded in this page is shown in its place, and the choice is kept.`);
     renderPick(); syncRun(); return;
   }
   chip('chip-conn', 'run', 'Connector', 'connecting…');
