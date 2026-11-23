@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Optimization Under Uncertainty"
+title: "Philosophy"
 permalink: /computational-infrastructure/
 author_profile: true
 ---
@@ -9,8 +9,59 @@ In this following summary of my research, I emphasize the technical aspects and 
 
 ---
 
+<div class="band" style="background-color: lightyellow; padding: 20px;" markdown="1">
+
+## Philosophy: Eulerian Minimization of Lagrangian Scalars
+My ambition is to develop scalable and robust computational infrastructure through foundational research spanning across physics, mathematics and computing for applications at the intersection of **Multidisciplinary Optimization Under Uncertainty (MDOUU)** and **Artificial Intelligence (AI)**.
+
+![](/files/images/philosophy.png)
+
+In contemporary scientific understanding, both MDOUU and AI are broad and distinctive disciplinary areas, but they share a common philosophical trait, and that's what excites me more than anything! They are both optimization statements that minimize an Objective subject to some Constraints.
+
+This is what **Leonhard Euler** wrote in 1744: *"...nothing at all takes place in the universe in which some rule of maximum or minimum does not appear"*, and I recognize that these are instantiations of the Eulerian school of thought. Therefore, one computational infrastructure should be able to support both MDOUU and AI (if one were to place their trust in Euler's intuitions :D). From my standpoint, MDOUU and AI are actually Optimization Under Uncertainty (OUU) statements involving the Expectation and Variance of metrics (e.g., minimize an expected loss and its variance, not mere loss!).
+
+<div class="lens-block" data-lens="engineer" markdown="1">
+
+I see **Genichi Taguchi**'s robust design as an engineering-centric application of this Eulerian school of thought, which my work on optimization under uncertainty, described below, puts into practice for aerospace systems.
+
+</div>
+
+<div class="lens-block" data-lens="physicist mathematician computational-scientist" markdown="1">
+
+What is that one object that combines an objective and constraints and is itself subject to conditions of stationarity for a purpose? Obviously, it is the Lagrangian (due to **J. L. Lagrange** for his work on Analytical Mechanics). He brilliantly ``engineered a scalar`` whose derivatives, when equated to zero, yielded the physics. I understand, recognize, formalize and extend the Lagrangian school of thought to hypothesize that, in addition to physics, sensitivity analysis and design optimizations are derivable from stationarities of Lagrangians, as are the innermost linear solvers, which are essentially `MINRES Operations`.
+
+</div>
+
+<!-- Side by side at equal heights on every screen: each portrait's share of the row is its width-to-height ratio (387/500 and 357/400). -->
+<div style="display: flex; flex-wrap: nowrap; justify-content: center; align-items: flex-start; gap: 24px; max-width: 424px; margin: 1.5em auto;">
+<figure style="display: block; flex: 774 1 0; min-width: 0; margin: 0; text-align: center;">
+<img src="/files/images/leonhard-euler.jpg" alt="Leonhard Euler" style="display: block; width: 100%; height: auto; margin: 0 0 0.5em;">
+<figcaption style="font-size: 0.9em;"><b>Leonhard Euler <span style="white-space: nowrap;">[1707 — 1783]</span></b><br>Portrait by J. E. Handmann, 1753</figcaption>
+</figure>
+<figure style="display: block; flex: 893 1 0; min-width: 0; margin: 0; text-align: center;">
+<img src="/files/images/joseph-louis-lagrange.jpg" alt="Joseph-Louis Lagrange" style="display: block; width: 100%; height: auto; margin: 0 0 0.5em;">
+<figcaption style="font-size: 0.9em;"><b>Joseph-Louis Lagrange <span style="white-space: nowrap;">[1736 — 1813]</span></b><br>Engraving, artist unknown</figcaption>
+</figure>
+</div>
+
+<div class="lens-block" data-lens="physicist mathematician computational-scientist" markdown="1">
+
+In short, my philosophy is in the same spirit as Euler-Lagrange equations: derive everything based on Lagrangians, so that the computational infrastructure is merely hierarchical Minimization of Residuals (mathematically) or Stationarity of Lagrangians (physically).
+
+</div>
+
+<div class="lens-block" data-lens="mathematician computational-scientist" markdown="1">
+
+Yet another of Euler's masterpieces is Graph Theory. I have no doubt that the conceived computational infrastructure will look visually like a ``Network of Graphs`` (in abstraction) or like a ``Network of Lagrangians`` that are tuned (in concretion). The evidence is also in plain sight: Neural Networks that form the foundation of AI are nothing but a Network of Graphs!
+
+</div>
+
+</div>
+
+---
+
 {::nomarkdown}
-<div style="background-color: #f0f0f0; padding: 20px;">
+<div class="band" style="background-color: #f0f0f0; padding: 20px;">
 {:/}
 
 <figure style="text-align: center; width: 300px; margin: auto;">
@@ -53,7 +104,7 @@ The elements of this infrastructure are connected to **Deterministic Optimizatio
 ---
 
 {::nomarkdown}
-<div style="background-color: lightyellow; padding: 20px;">
+<div class="band" style="background-color: lightyellow; padding: 20px;">
 {:/}
 
 ### (I) Uncertainty Propagation Methods through PDE Models
@@ -84,7 +135,7 @@ Apart from the technical contribution, it is deeply satisfying from a philosophi
 ---
 
 {::nomarkdown}
-<div style="background-color: #f0f0f0; padding: 20px;">
+<div class="band" style="background-color: #f0f0f0; padding: 20px;">
 {:/}
 
 ### (II) Computational Sensitivity Analysis Methods
@@ -122,7 +173,7 @@ I study the construction of higher-dimensional numbers that can provide first, s
 ---
 
 {::nomarkdown}
-<div style="background-color: lightyellow; padding: 20px;">
+<div class="band" style="background-color: lightyellow; padding: 20px;">
 {:/}
 
 ### (III) Computational Methods for High Fidelity Spatio-Temporal Physics
