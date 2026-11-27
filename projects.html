@@ -17,12 +17,12 @@
 <section class="page-hero"><div class="wrap">
   <p class="eyebrow">Projects</p>
   <h1>Projects</h1>
-  <p class="lede">Programs that a reader can run, each built on the same simulation infrastructure as the research.</p>
+  <p class="lede">Simulators that a reader can open in the browser, each built on the same simulation infrastructure as the research. Each one designs a vehicle from its control points, explains its model in a guide, and replays flights recorded by the program. Running a new flight sends the setup to the machine where the programs run, which only readers with access to that machine can do.</p>
 </div></section>
 
 <section class="band band--a" id="flight-simulator"><div class="wrap">
   <div class="split split--wide-left">
-    <figure class="fig fig--drawn"><a href="flight-simulator/" target="_blank" rel="noopener" aria-label="Open the Flight Simulator"><svg class="dr dr-fs" viewBox="0 0 480 220" role="img" aria-label="A light aircraft flying the phugoid: its height rises and falls slowly about the trimmed height after a brief nudge of the elevator">
+    <figure class="fig fig--drawn"><a href="flight-simulator/" target="_blank" rel="noopener" aria-label="Open Flight Simulator A"><svg class="dr dr-fs" viewBox="0 0 480 220" role="img" aria-label="A light aircraft flying the phugoid: its height rises and falls slowly about the trimmed height after a brief nudge of the elevator">
   <line class="grid" x1="40" y1="40" x2="40" y2="196"/><line class="grid" x1="110" y1="40" x2="110" y2="196"/><line class="grid" x1="180" y1="40" x2="180" y2="196"/><line class="grid" x1="250" y1="40" x2="250" y2="196"/><line class="grid" x1="320" y1="40" x2="320" y2="196"/><line class="grid" x1="390" y1="40" x2="390" y2="196"/><line class="grid" x1="460" y1="40" x2="460" y2="196"/><line class="grid" x1="40" y1="196" x2="460" y2="196"/>
   <line class="fs-trim" x1="40" y1="128" x2="460" y2="128"/>
   <path class="fs-path" id="fs-phugoid" d="M40 128 L44 122 L48 116.2 L52 110.6 L56 105.5 L60 100.8 L64 96.7 L68 93.2 L72 90.3 L76 88.1 L80 86.7 L84 86 L88 86.1 L92 86.8 L96 88.3 L100 90.5 L104 93.2 L108 96.6 L112 100.4 L116 104.6 L120 109.2 L124 114.1 L128 119.1 L132 124.2 L136 129.3 L140 134.2 L144 139 L148 143.6 L152 147.8 L156 151.6 L160 154.9 L164 157.7 L168 159.9 L172 161.6 L176 162.6 L180 163 L184 162.8 L188 162 L192 160.7 L196 158.7 L200 156.3 L204 153.4 L208 150.1 L212 146.5 L216 142.6 L220 138.6 L224 134.4 L228 130.1 L232 125.9 L236 121.8 L240 117.8 L244 114.1 L248 110.7 L252 107.7 L256 105 L260 102.8 L264 101 L268 99.8 L272 99 L276 98.8 L280 99.1 L284 99.9 L288 101.2 L292 102.9 L296 105 L300 107.5 L304 110.3 L308 113.4 L312 116.6 L316 120.1 L320 123.6 L324 127.1 L328 130.6 L332 134 L336 137.3 L340 140.3 L344 143.1 L348 145.5 L352 147.7 L356 149.4 L360 150.8 L364 151.7 L368 152.2 L372 152.3 L376 151.9 L380 151.2 L384 150 L388 148.5 L392 146.7 L396 144.5 L400 142.1 L404 139.5 L408 136.8 L412 133.9 L416 130.9 L420 128 L424 125.1 L428 122.3 L432 119.6 L436 117.2 L440 114.9 L444 112.9 L448 111.2 L452 109.8 L456 108.8 L460 108.1"/>
@@ -35,11 +35,33 @@
     <g class="fs-cp"><circle cx="0" cy="18" r="2.6"/><circle cx="28" cy="14" r="2.6"/><circle cx="56" cy="14" r="2.6"/><circle cx="84" cy="14" r="2.6"/><circle cx="112" cy="18" r="2.6"/><circle cx="0" cy="34" r="2.6"/><circle cx="28" cy="36" r="2.6"/><circle cx="56" cy="38" r="2.6"/><circle cx="84" cy="36" r="2.6"/><circle cx="112" cy="34" r="2.6"/></g></g>
 </svg></a></figure>
     <div class="prose">
-      <h2>Flight Simulator</h2>
-      <p>The Flight Simulator designs a light aircraft and flies it as one rigid body. The wing, the tailplane and the fin are NURBS surfaces, and the fuselage is a series of exact circular sections. Moving a control point updates the mass, the centre of mass and the static margin at once.</p>
-      <p>Each flight starts in trim, which an optimization finds as the pitch, elevator deflection and thrust at which nothing accelerates. The equations of motion are then integrated in time by the second-order backward differentiation formula.</p>
-      <p>Seven questions lead through flight dynamics. They cover the phugoid and its period against Lanchester&#8217;s estimate, the short-period mode and the linearity of a larger disturbance. They also cover the elevator&#8217;s control of speed and height, a centre of mass behind the neutral point, a bank that does not undo itself and a kick of the rudder.</p>
-      <div class="btns"><a class="btn" href="flight-simulator/" target="_blank" rel="noopener">Open the Flight Simulator</a></div>
+      <h2>Flight Simulators A and B</h2>
+      <p>The flight simulators design a light aircraft and fly it. The wing, the tailplane and the fin are NURBS surfaces, and the fuselage is a series of exact circular sections. Moving a control point updates the mass, the centre of mass and the static margin at once.</p>
+      <p>The two pages fly the same aircraft at two levels of fidelity. Flight Simulator A flies it as one rigid body. Flight Simulator B flies the airframe and its four control surfaces, the elevator, the rudder and the two ailerons, as rigid bodies on hinges, each turned by a servo, so that it also reports the hinge moments and the work of the servos.</p>
+      <p>Each flight starts in trim, which an optimization finds as the pitch, elevator deflection and thrust at which nothing accelerates. The equations of motion are then integrated in time, by default by a fourth-order diagonally implicit Runge&#8211;Kutta method.</p>
+      <p>Its missions lead through flight dynamics. They cover the phugoid and its period against Lanchester&#8217;s estimate, the short-period mode and the linearity of a larger disturbance. They also cover the elevator&#8217;s control of speed and height, a centre of mass behind the neutral point, a bank that does not undo itself and a kick of the rudder.</p>
+      <div class="btns"><a class="btn" href="flight-simulator/" target="_blank" rel="noopener">Open Flight Simulator A</a><a class="btn btn--quiet" href="flight-simulator-b/" target="_blank" rel="noopener">Open Flight Simulator B</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band band--b" id="satellite-simulator"><div class="wrap">
+  <div class="split split--wide-left">
+    <figure class="fig fig--drawn"><a href="satellite-simulator-b/" target="_blank" rel="noopener" aria-label="Open Satellite Simulator B"><svg class="dr dr-fs" viewBox="0 0 480 220" role="img" aria-label="A spacecraft on an inclined orbit about the Earth, its panels edge-on to its path">
+  <circle cx="240" cy="118" r="62" style="fill: color-mix(in srgb, var(--reliable) 14%, transparent); stroke: var(--reliable); stroke-width: 1.2"/>
+  <ellipse class="fs-trim" cx="240" cy="118" rx="62" ry="18"/>
+  <path class="fs-path" id="sat-orbit" d="M100 150 C100 70 380 40 380 86 C380 166 100 196 100 150 Z"/>
+  <g class="fs-static" transform="translate(128 100)"><rect class="fs-plane" x="-6" y="-5" width="12" height="10" rx="2"/><path class="fs-wing" d="M-22 0 H-8 M8 0 H22"/></g>
+  <g class="fs-moving"><rect class="fs-plane" x="-6" y="-5" width="12" height="10" rx="2"/><path class="fs-wing" d="M-22 0 H-8 M8 0 H22"/><animateMotion dur="14s" repeatCount="indefinite" rotate="auto"><mpath href="#sat-orbit"/></animateMotion></g>
+  <text class="t-m" x="240" y="122" text-anchor="middle">Earth</text>
+  <text class="t-m" x="40" y="212">an inclined orbit, the Earth's flattening turning its plane</text>
+</svg></a></figure>
+    <div class="prose">
+      <h2>Satellite Simulators A and B</h2>
+      <p>The satellite simulators design a spacecraft and fly it in orbit about the Earth. Each solar panel is a NURBS surface and the bus is a series of exact circular sections, with point masses for the thruster, the payload and the tip of a gravity-gradient boom. Moving a control point shows at once whether the spacecraft, pointed at the Earth, is stable in the gravity gradient.</p>
+      <p>The orbit feels the Earth&#8217;s flattening and a thin, free-molecular atmosphere. The attitude feels the gravity gradient, the air, three reaction wheels, the torquers and the thruster. A mission may lose a stretch of a panel, fail a control or stick it on, or thicken the air with a storm.</p>
+      <p>The two pages fly the same spacecraft at two levels of fidelity. Satellite Simulator A flies it as one rigid body, each wheel&#8217;s angular momentum known from its motor. Satellite Simulator B flies each reaction wheel as a body of its own on a revolute joint to the bus. Flying one mission on both pages checks one level of fidelity against the other.</p>
+      <div class="btns"><a class="btn" href="satellite-simulator-a/" target="_blank" rel="noopener">Open Satellite Simulator A</a><a class="btn btn--quiet" href="satellite-simulator-b/" target="_blank" rel="noopener">Open Satellite Simulator B</a></div>
     </div>
   </div>
 </div></section>
